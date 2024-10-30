@@ -1,0 +1,133 @@
+.block-actionA {
+	background-image: url("../img/g1.webp"), url("../img/pattern-white2.webp");
+	background-size: 646px auto, cover;
+	background-position: right center, center;
+	background-repeat: no-repeat;
+	color: var(--color-blue);
+
+	.block-action__title {
+		color: var(--color-blue);
+	}
+
+	.block-action__subtitle {
+		background-image: url("../img/yellow-bg.svg");
+		background-size: 200px auto;
+		background-repeat: no-repeat;
+		background-position: right top 17px;
+	}
+
+	.btn {
+		@media(max-width: 767px) {
+			width: 100%;
+		}
+	}
+
+	@media(max-width: 767px) {
+		background-size: calc(100% - 40px) auto, cover;
+		background-position: right bottom 70px, center;
+	}
+}
+
+.block-actionB {
+	position: relative;
+	background-image: url("../img/women1.webp"), url("../img/pattern1.svg");
+	background-size: contain, cover;
+	background-position: right, center;
+	background-repeat: no-repeat;
+	color: #ffffff;
+
+	.block-action__title {
+		color: #fff;
+	}
+
+	.block-action__subtitle {
+		@media(max-width: 767px) {
+			margin-bottom: 128px;
+		}
+	}
+
+	.btn {
+		svg {
+			path {
+				stroke: var(--color-green);
+			}
+		}
+		@media(max-width: 767px) {
+			width: 100%;
+		}
+	}
+
+	@media(max-width: 767px) {
+		background-image: url("../img/women1-mobile.webp"), url("../img/pattern1.svg");
+		background-position: right bottom, center;
+		background-size: calc(100% - 16px), cover;
+	}
+}
+
+.block-action__title {
+	margin-bottom: 0;
+}
+
+.block-action {
+	min-height: 456px;
+	border-radius: 40px;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 40px;
+
+	.btn {
+		@media(max-width: 767px) {
+			margin-top: auto;
+		}
+	}
+
+	@media(max-width: 767px) {
+		padding: 16px;
+		gap: 33px;
+	}
+}
+
+
+.block-action__subtitle {
+	position: relative;
+	font-size: 18px;
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	a {
+		color: #252627;
+		text-decoration: underline;
+	}
+
+	@media(max-width: 767px) {
+		font-size: 16px;
+	}
+}
+
+.block-actionA__subtitle {
+	// &::after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	width: 202px;
+	// 	height: 2px;
+	// 	border-radius: 3px;
+	// 	background-color: var(--color-blue);
+	// 	top: 45px;
+	// 	right: 0;
+	// }
+
+	// &::before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	width: 93px;
+	// 	height: 2px;
+	// 	border-radius: 3px;
+	// 	background-color: var(--color-blue);
+	// 	top: 51px;
+	// 	right: 28px;
+	// }
+}

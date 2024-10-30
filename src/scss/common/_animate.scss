@@ -1,0 +1,15 @@
+.animate {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.animate-icn {
+	width: 38px;
+	height: 32px;
+
+	@media(min-width: 768px) {
+		display: none;
+	}
+}

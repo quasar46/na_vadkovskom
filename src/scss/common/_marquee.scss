@@ -1,0 +1,46 @@
+.marquee {
+	width: 100%;
+	overflow: hidden;
+
+	span {
+		position: relative;
+		padding: 0 56px;
+		font-size: 40px;
+		font-weight: 500;
+		font-family: Brusnika, 'sans-serif';
+		text-transform: uppercase;
+		line-height: 1;
+
+		&:first-child {
+			color: var(--color-light-blue);
+		}
+
+		&:nth-child(2) {
+			color: var(--color-pink);
+		}
+
+		&:last-child {
+			color: var(--color-green);
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 32px;
+			height: 32px;
+			background-image: url("../img/znak.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+			right: -16px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		@media(max-width: 767px) {
+			font-size: 32px;
+		}
+	}
+}
+
+.js-marquee {
+	display: flex;
+}

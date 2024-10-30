@@ -1,0 +1,88 @@
+.contacts-block__wrap {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 16px;
+	margin-bottom: 30px;
+
+	@media(max-width: 767px) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.contacts-block__item {
+	background-color: #fff;
+	border-radius: 24px;
+	padding: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	&:last-child {
+		background-image: url("../img/tel-bg.webp");
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		background-size: contain;
+		@media(max-width: 767px) {
+			background-size: 203px auto;
+		}
+	}
+	@media(max-width: 767px) {
+		padding: 16px;
+		min-height: 240px;
+	}
+}
+
+.contacts-block__social {
+	display: flex;
+	gap: 16px;
+	margin-top: auto;
+
+	a {
+		&:hover {
+			svg {
+				path:first-child {
+					fill: var(--color-pink);
+				}
+			}
+		}
+	}
+}
+
+.contacts-block__title-soc {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--color-light-blue);
+}
+
+.contacts-block__title {
+	font-size: 14px;
+	font-weight: 400;
+	color: #5D667D;
+	margin-bottom: 4px;
+}
+
+.contacts-block__row {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	color: var(--color-blue);
+
+	a {
+		span {
+			color: var(--color-light-blue);
+		}
+	}
+
+	p {
+		font-size: 22px;
+		font-weight: 600;
+		text-transform: uppercase;
+
+		@media(max-width: 767px) {
+			font-size: 16px;
+		}
+	}
+
+}

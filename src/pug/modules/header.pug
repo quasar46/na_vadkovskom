@@ -1,0 +1,94 @@
+header.header 
+	.container 
+		.header__wrap 
+			.header__top 
+				a.header__logo(href="")
+					img(src="../img/logo.svg" alt="")
+				.header__search
+					input(type="text" placeholder="Поиск")
+				.header__right
+					.header__social 
+						a.header__social-link(href="tel:84999726237") 
+							include ../svg/phone
+						a.header__social-link(href="")
+							include ../svg/vk
+						a.header__social-link(href="")
+							include ../svg/tg
+					.header__special 
+						include ../svg/eye
+						span Для слабовидящих
+			.header__mobile 
+				.header__social 
+					a.header__social-link(href="tel:84999726237") 
+						include ../svg/phone
+					a.header__social-link(href="")
+						include ../svg/vk
+					a.header__social-link.header__social-link--mode(href="")
+						include ../svg/tg
+						| Наш канал
+						
+				.header__menu 
+					| Меню
+					.burger
+						span.burger__item
+			.menu 
+				.menu__item 
+					a(href="") 
+						| О школе
+						include ../svg/arrow
+					.submenu
+						.submenu__links
+							a(href="").submenu__item Команда
+							a(href="").submenu__item Работа в центре
+							a(href="").submenu__item Документы
+							a(href="").submenu__item Отчеты
+							a(href="").submenu__item Объединения
+							a(href="").submenu__item Новости
+							a(href="").submenu__item Филиалы
+				.menu__item 
+					a(href="") Новости
+				.menu__item 
+					a(href="") 
+						| Детям
+						include ../svg/arrow
+					.submenu
+						.submenu__links 
+							a(href="").submenu__item Объединения
+							a(href="").submenu__item Анонсы мероприятий
+							a(href="").submenu__item План мероприятий на месяц
+				.menu__item 
+					a(href="") 
+						| Родителям
+						include ../svg/arrow
+					.submenu
+						.submenu__links 
+							a(href="").submenu__item Расписание
+							a(href="").submenu__item Объединения
+				.menu__item 
+					a(href="") 
+						| Педагогам
+						include ../svg/arrow
+					.submenu
+						.submenu__links 
+							a(href="").submenu__item Вакансии
+							a(href="").submenu__item Курсы
+				.menu__item 
+					a(href="") 
+						| Долголетие
+						include ../svg/arrow
+					.submenu
+						.submenu__links 
+							a(href="").submenu__item Расписание
+							a(href="").submenu__item Объединения
+							a(href="").submenu__item Отзывы
+				.menu__item 
+					a(href="") 
+						| Методическая площадка
+						include ../svg/arrow
+					.submenu
+						.submenu__links 
+							a(href="").submenu__item Документы
+							a(href="").submenu__item Отчеты
+							a(href="").submenu__item Методисты
+				.menu__item 
+					a(href="") Контакты

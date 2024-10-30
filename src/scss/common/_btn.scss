@@ -1,0 +1,114 @@
+.btn {
+	// background-image: url("../img/btn-arr.svg");
+	// background-position: center right 8px;
+	// background-size: 40px auto;
+	// background-repeat: no-repeat;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: Brusnika, 'sans-serif';
+	color: var(--color-blue);
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	// justify-content: center;
+	text-align: center;
+	height: 56px;
+	border-radius: 60px;
+	padding: 0 32px;
+	// border: 2px solid var(--color-light-blue);
+	cursor: pointer;
+
+	&--a {
+		background-color: var(--color-blue);
+		color: #fff;
+	}
+
+	&--b {
+		background-color: var(--color-pink);
+		color: #fff;
+	}
+
+	&--c {
+		background-color: var(--color-yellow);
+		color: #fff;
+		justify-content: center;
+	}
+
+	&--d {
+		background-color: var(--color-green);
+		color: #fff;
+		justify-content: center;
+	}
+
+	&--circle {
+		border-radius: 60px;
+		height: 56px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		color: #fff;
+		font-size: 20px;
+		font-weight: 500;
+		padding: 0 32px;
+		text-transform: uppercase;
+		font-family: Brusnika;
+		cursor: pointer;
+		gap: 24px;
+		padding-right: 8px;
+		svg {
+			flex: 0 1 40px;
+		}
+
+		&:hover {
+			background-color: var(--color-pink);
+		}
+
+	}
+}
+
+.btn-more {
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	gap: 10px;
+	background-color: transparent;
+	color: var(--color-blue);
+	padding: 0;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.btn-border {
+	font-size: 20px;
+	font-weight: 500;
+	font-family: Brusnika, sans-serif;
+	border: 2px solid;
+	height: 56px;
+	display: flex;	
+	align-items: center;
+	padding: 0 32px;
+	border-radius: 60px;
+	text-transform: uppercase;
+	&--light-blue {
+		border-color: var(--color-light-blue);
+		color: var(--color-blue);
+		&:hover {
+			background-color: var(--color-blue);
+			color: #fff;
+			border-color: var(--color-blue);
+		}
+	}
+	&--white {
+		border-color: #fff;
+		color: #fff;
+		&:hover {
+			background-color: #fff;
+			color: var(--color-pink);
+		}
+	}
+	@media(max-width: 767px) {
+		height: 40px;
+		font-size: 16px;
+		padding: 0 16px;
+	}
+}

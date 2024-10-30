@@ -1,0 +1,30 @@
+.swiper-nav {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	@media(max-width: 767px) {
+		display: none;
+	}
+}
+
+.swiper--scroll {
+	overflow: visible;
+	padding-bottom: 30px;
+
+	.swiper-scrollbar {
+		background-color: transparent;
+	}
+
+	.swiper-scrollbar-drag {
+		height: 8px;
+		border-radius: 24px;
+		background-color: #B5C2E4;
+	}
+}
+
+.swiper-scrollbar {
+	@media(max-width: 767px) {
+		display: none;
+	}
+}
