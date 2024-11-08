@@ -89,6 +89,8 @@
 	padding: 0 32px;
 	border-radius: 60px;
 	text-transform: uppercase;
+	background-color: transparent;
+	cursor: pointer;
 	&--light-blue {
 		border-color: var(--color-light-blue);
 		color: var(--color-blue);

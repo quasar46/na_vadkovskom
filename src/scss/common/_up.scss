@@ -1,0 +1,11 @@
+.up {
+	position: fixed;
+	background-image: url("../img/up.svg");
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+
+	&::before {
+		content: "Наверх";
+	}
+}

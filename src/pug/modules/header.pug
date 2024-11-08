@@ -21,19 +21,20 @@ header.header
 				.header__social 
 					a.header__social-link(href="tel:84999726237") 
 						include ../svg/phone
-					a.header__social-link(href="")
+					a.header__social-link(href="" target="_blank")
 						include ../svg/vk
-					a.header__social-link.header__social-link--mode(href="")
+					a.header__social-link.header__social-link--mode(href="" target="_blank")
 						include ../svg/tg
 						| Наш канал
-						
+
 				.header__menu 
 					| Меню
 					.burger
-						span.burger__item
 			.menu 
-				.menu__item 
-					a(href="") 
+				.menu__close 
+					img(src="img/close.svg" alt="")
+				.menu__item
+					a
 						| О школе
 						include ../svg/arrow
 					.submenu
@@ -45,10 +46,10 @@ header.header
 							a(href="").submenu__item Объединения
 							a(href="").submenu__item Новости
 							a(href="").submenu__item Филиалы
-				.menu__item 
+				.menu__item
 					a(href="") Новости
-				.menu__item 
-					a(href="") 
+				.menu__item
+					a
 						| Детям
 						include ../svg/arrow
 					.submenu
@@ -57,7 +58,7 @@ header.header
 							a(href="").submenu__item Анонсы мероприятий
 							a(href="").submenu__item План мероприятий на месяц
 				.menu__item 
-					a(href="") 
+					a
 						| Родителям
 						include ../svg/arrow
 					.submenu
@@ -65,7 +66,7 @@ header.header
 							a(href="").submenu__item Расписание
 							a(href="").submenu__item Объединения
 				.menu__item 
-					a(href="") 
+					a
 						| Педагогам
 						include ../svg/arrow
 					.submenu
@@ -73,7 +74,7 @@ header.header
 							a(href="").submenu__item Вакансии
 							a(href="").submenu__item Курсы
 				.menu__item 
-					a(href="") 
+					a
 						| Долголетие
 						include ../svg/arrow
 					.submenu
@@ -82,13 +83,23 @@ header.header
 							a(href="").submenu__item Объединения
 							a(href="").submenu__item Отзывы
 				.menu__item 
-					a(href="") 
+					a
 						| Методическая площадка
 						include ../svg/arrow
 					.submenu
-						.submenu__links 
+						.submenu__links
 							a(href="").submenu__item Документы
 							a(href="").submenu__item Отчеты
 							a(href="").submenu__item Методисты
-				.menu__item 
+				.menu__item
 					a(href="") Контакты
+				.menu__contacts
+					a(href="" target="_blank")
+						include ../svg/vk
+					a(href="" target="_blank").menu__contacts-tg 
+						include ../svg/tg-icn-small
+						| Наш канал
+					a(href="tel:84999726237").menu__contacts-phone 8 (499) 972-62-37
+					a(href="maito:navadkovskom@social.mos.ru").menu__contacts-mail 
+						include ../svg/mail-icn 
+						| navadkovskom@social.mos.ru

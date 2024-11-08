@@ -1,5 +1,8 @@
 // cusom code
 document.addEventListener('DOMContentLoaded', function () {
+
+	const body = document.querySelector('.body')
+
 	const dropdowns = document.querySelectorAll("nav ul li");
 
 	for (var i = 0; i < dropdowns.length; i++) {
@@ -104,6 +107,36 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	AOS.init({});
+
+
+	const footerWrap = document.querySelector('.footer__wrap')
+	const footerSubscripe = document.querySelector('.footer__subscribe')
+	const footerCenter = document.querySelector('.footer__center')
+	const footerCopy = document.querySelector('.footer__copy')
+	const footerBox = document.querySelector('.footer__box:last-child')
+	const footerBottom = document.querySelector('.footer__bottom')
+	if (window.innerWidth < 768) {
+		footerCenter.append(footerSubscripe)
+		footerWrap.append(footerCenter)
+		footerWrap.append(footerCopy)
+		footerBox.append(footerBottom)
+	}
+
+	const burger = document.querySelector('.burger')
+	const menu = document.querySelector('.menu')
+	const menuClose = document.querySelector('.menu__close')
+	burger.addEventListener('click', function () {
+		// this.classList.toggle('active')
+		menu.classList.toggle('active')
+	})
+	menuClose.addEventListener('click', function() {
+		menu.classList.remove('active')
+	})
+
+// 	const headerSocial = document.querySelector('.header__social')
+// 	if (window.innerWidth < 768) {
+// 		menu.append(headerSocial)
+// 	}
 })
 
 $(document).ready(function () {
