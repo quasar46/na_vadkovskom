@@ -1,0 +1,39 @@
+section.section.contacts-block
+	.container 
+		h2.section__title.section__title--center Контакты
+		.contacts-block__wrap 
+			.contacts-block__item 
+				.contacts-block__row
+					h4.contacts-block__title Адрес:
+					p г. Москва, Вадковский пер., д. 3
+				.contacts-block__row 
+					h4.contacts-block__title Режим работы:
+					p Пн. – Вс.: с 9:00 до 22:00
+				.contacts-block__row
+					h4.contacts-block__title Телефон:
+					a(href="tel:84999726237") 8 (499) 972-62-37
+					a(href="tel:84999726155") 8 (499) 972-61-55 - 
+						span директор
+					a(href="tel:84999726237") 8 (499) 972-62-37 - 
+						span вахта
+			.contacts-block__item 
+				.contacts-block__row
+					h4.contacts-block__title Адрес
+					p г. Москва, пр. Мира, д. 43
+				.contacts-block__row
+					h4.contacts-block__title Режим работы:
+					p Пн. – Вс.: с 9:00 до 22:00
+				.contacts-block__row
+					h4.contacts-block__title Телефон:
+					p 8 (495) 681-03-65
+			.contacts-block__item
+				h4.contacts-block__title-soc Соцсети
+				.contacts-block__social
+					a(href="" target="_blank")
+						include ../svg/vk2
+					a(href="" target="_blank")
+						include ../svg/tg2
+	if map == true
+		.container
+			.map
+				<iframe src="https://yandex.ru/map-widget/v1/?ll=37.597997%2C55.790138&mode=search&oid=1063480081&ol=biz&sctx=ZAAAAAgBEAAaKAoSCRVWKqioGEJAEQ6jIHh83UlAEhIJMV2I1R9h1T8RE9bG2Akvwz8iBgABAgMEBSgKOABAt54BSAFqAnJ1nQHNzMw9oAEAqAEAvQGhtKiPwgEFkdaN%2BwOCAiTQndCwINCS0LDQtNC60L7QstGB0LrQvtC8INGG0LXQvdGC0YCKAgCSAgMyMTOaAgxkZXNrdG9wLW1hcHM%3D&sll=37.597997%2C55.790138&sspn=0.007485%2C0.003047&text=%D0%9D%D0%B0%20%D0%92%D0%B0%D0%B4%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC%20%D1%86%D0%B5%D0%BD%D1%82%D1%80&z=17.48" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>

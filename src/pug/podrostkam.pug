@@ -1,0 +1,38 @@
+extends layout
+block vars
+	- var mainSliderFirstBtn = "Узнать подробнее"
+	- var mainSliderTitle1 = "Наша миссия – вдохновлять и развивать талант каждого ребенка!"
+	- var mainSliderTitle2 = "Наша миссия – вдохновлять и развивать талант каждого ребенка!"
+	- var mainSliderTitle3 = "Наша миссия – вдохновлять и развивать талант каждого ребенка!"
+	- var mainSliderText1 = "В нашем центре творчества мы создаём атмосферу, где каждый ребёнок может раскрыть свои таланты, развить креативность и уверенность в себе. Мы верим, что творчество — это ключ к гармоничному развитию, и стремимся помочь каждому найти свой уникальный путь, науки и самовыражения"
+	- var mainSliderText2 = "В нашем центре творчества мы создаём атмосферу, где каждый ребёнок может раскрыть свои таланты, развить креативность и уверенность в себе. Мы верим, что творчество — это ключ к гармоничному развитию, и стремимся помочь каждому найти свой уникальный путь, науки и самовыражения"
+	- var mainSliderText3 = "В нашем центре творчества мы создаём атмосферу, где каждый ребёнок может раскрыть свои таланты, развить креативность и уверенность в себе. Мы верим, что творчество — это ключ к гармоничному развитию, и стремимся помочь каждому найти свой уникальный путь, науки и самовыражения"
+	- const feedbackTitle = "Приходите к нам!"
+	- var mainSliderUrlPic1 = "img/s1.webp"
+	- var mainSliderUrlPic2 = "img/s1.webp"
+
+block main 
+	main
+		.breadcrumbs 
+			.container
+				ul 
+					li
+						a(href="index.html")
+							span На главную
+					li 
+						span /
+					li 
+						span(href="") Подросткам
+		include blocks/main-slider
+		include blocks/story
+		section.section.video  
+			.container 
+				h2.section__title 
+					div 
+						<span class="blue">Видео </span> про наш центр 
+					img(src="img/video-text.svg" alt="")
+				include blocks/video
+		include blocks/news-block
+		.block-blue-before
+		include blocks/feedback
+		.block-blue-after

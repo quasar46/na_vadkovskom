@@ -51,7 +51,7 @@ gulp.task("css", function () {
 });
 
 gulp.task('vendor', function () {
-	return gulp.src("src/vendor/*.*")
+	return gulp.src("src/vendor/**/*.*")
 		.pipe(gulp.dest("build"))
 });
 
@@ -69,8 +69,9 @@ gulp.task("exportWebP", function () {
 	return gulp.src(src)
 		.pipe(imagemin([
 			webp({
-				// lossless: true, if pngs turn out sucky uncomment this and redo just pngs
-				quality: 80
+				// if pngs turn out sucky uncomment this and redo just pngs
+				// lossless: true,
+				quality: 100
 			})
 		]))
 		.pipe(extReplace(".webp"))
@@ -130,7 +131,7 @@ gulp.task("server", function () {
 	gulp.watch("src/pug/**/*.pug", gulp.series("pug", "refresh"));
 	gulp.watch("src/js/*.js", gulp.series("js", "refresh"));
 	gulp.watch("src/img/**/*.*", gulp.series("exportWebP", "refresh"));
-	gulp.watch("src/img/**/*.*", gulp.series("svg", "refresh"));
+	gulp.watch("src/img/**/*.svg", gulp.series("svg", "refresh"));
 	gulp.watch("src/fonts/*.*", gulp.series("fonts", "refresh"));
 	gulp.watch("src/vendor/*.*", gulp.series("vendor", "refresh"));
 	gulp.watch("src/scss/utils/stylesheet.css", gulp.series("stylesheet", "refresh"));

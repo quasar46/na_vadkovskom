@@ -1,0 +1,50 @@
+.card-single-desr {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	gap: 16px;
+
+	a {
+		transition: all 0.3s ease;
+		&:hover {
+			color: var(--color-pink);
+		}
+	}
+
+	&__item {
+		background-color: #fff;
+		border-radius: 24px;
+		padding: 24px;
+		display: flex;
+		flex-direction: column;
+
+		span {
+			&:first-child {
+				font-size: 18px;
+
+				@media(max-width: 767px) {
+					font-size: 14px;
+				}
+			}
+
+			&:nth-child(2) {
+				font-size: 18px;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: var(--color-blue);
+
+				@media(max-width: 767px) {
+					font-size: 16px;
+				}
+			}
+		}
+
+		@media(max-width: 767px) {
+			padding: 16px;
+		}
+	}
+
+	@media(max-width: 767px) {
+		display: flex;
+		flex-direction: column;
+	}
+}

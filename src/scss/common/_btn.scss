@@ -1,8 +1,4 @@
 .btn {
-	// background-image: url("../img/btn-arr.svg");
-	// background-position: center right 8px;
-	// background-size: 40px auto;
-	// background-repeat: no-repeat;
 	font-size: 20px;
 	font-weight: 500;
 	font-family: Brusnika, 'sans-serif';
@@ -10,17 +6,18 @@
 	display: flex;
 	align-items: center;
 	text-transform: uppercase;
-	// justify-content: center;
 	text-align: center;
 	height: 56px;
 	border-radius: 60px;
 	padding: 0 32px;
-	// border: 2px solid var(--color-light-blue);
 	cursor: pointer;
 
 	&--a {
 		background-color: var(--color-blue);
 		color: #fff;
+		&:hover {
+			background-color: var(--color-pink);	
+		}
 	}
 
 	&--b {
@@ -40,6 +37,12 @@
 		justify-content: center;
 	}
 
+	&--e {
+		background-color: #ABB8DA;
+		color: #fff;
+		justify-content: center;
+	}
+
 	&--circle {
 		border-radius: 60px;
 		height: 56px;
@@ -55,6 +58,7 @@
 		cursor: pointer;
 		gap: 24px;
 		padding-right: 8px;
+
 		svg {
 			flex: 0 1 40px;
 		}
@@ -84,30 +88,35 @@
 	font-family: Brusnika, sans-serif;
 	border: 2px solid;
 	height: 56px;
-	display: flex;	
+	display: flex;
 	align-items: center;
 	padding: 0 32px;
 	border-radius: 60px;
 	text-transform: uppercase;
 	background-color: transparent;
 	cursor: pointer;
+
 	&--light-blue {
 		border-color: var(--color-light-blue);
 		color: var(--color-blue);
+
 		&:hover {
 			background-color: var(--color-blue);
 			color: #fff;
 			border-color: var(--color-blue);
 		}
 	}
+
 	&--white {
 		border-color: #fff;
 		color: #fff;
+
 		&:hover {
 			background-color: #fff;
 			color: var(--color-pink);
 		}
 	}
+
 	@media(max-width: 767px) {
 		height: 40px;
 		font-size: 16px;

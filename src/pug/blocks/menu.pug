@@ -1,0 +1,80 @@
+.menu 
+	.menu__close 
+		img(src="img/close.svg" alt="")
+	.menu__item
+		a
+			| О центре
+			include ../svg/arrow
+		.submenu
+			.submenu__links
+				a(href="").submenu__item О нас 
+				a(href="staff.html").submenu__item Команда
+				a(href="").submenu__item Объединения 
+				a(href="news.html").submenu__item Новости
+				a(href="").submenu__item Работа в центре
+				a(href="https://navadkovscom.ru/platnye-uslugi/").submenu__item Наши услуги 
+				a(href="").submenu__item Сведения об образовательной организации
+	//- .menu__item
+	//- 	a(href="news.html") Новости
+	.menu__item
+		a
+			| Детям
+			include ../svg/arrow
+		.submenu
+			.submenu__links 
+				a(href="obedineniya.html").submenu__item Объединения
+				a(href="").submenu__item Клубы
+				a(href="").submenu__item Актив центра
+				a(href="").submenu__item Конкурсы и фестивали
+	.menu__item 
+		a
+			| Родителям
+			include ../svg/arrow
+		.submenu
+			.submenu__links 
+				a(href="raspisanie.html").submenu__item Расписание
+				a(href="obedineniya.html").submenu__item Объединения
+				a(href="").submenu__item Клубы
+				a(href="").submenu__item Конкурсы и фестивали  
+	.menu__item 
+		a
+			| Педагогам
+			include ../svg/arrow
+		.submenu
+			.submenu__links 
+				a(href="https://navadkovscom.ru/pedagogu-centra/").submenu__item Общая информация 
+				a(href="").submenu__item План мероприятий
+				a(href="").submenu__item Работа в центре 
+				a(href="").submenu__item Курсы
+	.menu__item 
+		a(href="https://navadkovscom.ru/gorodskaja-metodicheskaja-ploshhadka") Методическая площадка 
+	.menu__item 
+		a
+			| Долголетие
+			include ../svg/arrow
+		.submenu
+			.submenu__links 
+				a(href="raspisanie.html").submenu__item Расписание
+				a(href="obedineniya.html").submenu__item Объединения
+				a(href="").submenu__item Отзывы
+	//- .menu__item 
+	//- 	a
+	//- 		| Методическая площадка
+	//- 		include ../svg/arrow
+	//- 	.submenu
+	//- 		.submenu__links
+	//- 			a(href="").submenu__item Документы
+	//- 			a(href="").submenu__item Отчеты
+	//- 			a(href="").submenu__item Методисты
+	.menu__item
+		a(href="contacts.html") Контакты
+	.menu__contacts
+		a(href="" target="_blank")
+			include ../svg/vk
+		a(href="" target="_blank").menu__contacts-tg 
+			include ../svg/tg-icn-small
+			| Наш канал
+		a(href="tel:84999726237").menu__contacts-phone 8 (499) 972-62-37
+		a(href="maito:navadkovskom@social.mos.ru").menu__contacts-mail 
+			include ../svg/mail-icn 
+			| navadkovskom@social.mos.ru

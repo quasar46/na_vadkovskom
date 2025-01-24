@@ -1,9 +1,61 @@
 .breadcrumbs {
-	display: flex;
-	font-size: 14px;
-	font-weight: 400;
+	margin-bottom: 24px;
 
-	a {
-		color: var(--color-blue);
+	ul {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		font-size: 14px;
+		font-weight: 400;
+		color: var(--color-light-blue);
+		min-width: 100%;
+		overflow-x: auto;
+
+		li {
+			white-space: nowrap;
+			display: flex;
+
+			&:first-child {
+				color: var(--color-blue);
+
+				a {
+					&::before {
+						content: "";
+						background-image: url("../img/arrow-left.svg");
+						width: 24px;
+						height: 24px;
+						background-size: 24px auto;
+						background-repeat: no-repeat;
+						background-position: left center;
+					}
+				}
+			}
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			gap: 4px;
+		}
+	}
+}
+
+.body--blue {
+	.breadcrumbs {
+		ul {
+			color: #ABB8DA;
+
+			li {
+				&:first-child {
+					color: #fff;
+
+					a {
+						&::before {
+							background-image: url("../img/icn/arrow-left-white.svg");
+						}
+					}
+				}
+			}
+		}
 	}
 }

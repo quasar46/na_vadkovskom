@@ -1,0 +1,138 @@
+extends layout
+block vars 
+	- const feedbackTitle = "Связаться с нами"
+block main 
+	main 
+		.breadcrumbs 
+			.container 
+				ul 
+					li
+						a(href="javascript:history.back()")
+							span Назад 
+					li 
+						span /
+					li 
+						a(href="") Объединения
+					li 
+						span /
+					li 
+						a(href="")  От 18 и старше
+					li 
+						span /
+					li 
+						span Коллектив современного танца «Фортуна»
+		section.section 
+			.container
+				.card 
+					.card__content 
+						h2.card__title Коллектив современного танца <span class="pink">«ФОРТУНА»</span>. Джаз модерн для взрослых
+						.card__content-footer.card__content-footer--desctop
+							span 1 700руб / мес
+							a.btn.btn--circle.btn--a.showModal1(href="") Записаться в студию
+								include svg/arrow-circle 
+					.card__pic
+						img(src="img/image15.webp" alt="")
+					.card__content-footer.card__content-footer--mobile
+						span 1 700руб / мес
+						a.btn.btn--circle.btn--a.showModal1(href="") Записаться в студию
+							include svg/arrow-circle 
+
+		section.section 
+			.container 
+				.article 
+					.article__wrap 
+						#target1.article__block.article__block--main.--mode
+							h3.article__title О программе
+							.article__descr 
+								.article__descr-col
+									span Категория
+									span от 18 лет
+								.article__descr-col
+									span Вид занятий
+									span Групповые
+								.article__descr-col
+									span Длительность программы
+									span 3 года
+								.article__descr-col
+									span Время проведения
+									span Суббота с 19:35 до 21:05
+
+							h4.h4 В программу обучения входят занятия по современному и классическому танцу:
+							ul.list-circle-pink
+								li Джаз-модерн
+								li Contemporary dance
+								li Портерная гимнастика
+								li Танцевальная лаборатория «Я-пространство»
+								li Изучение терминов и понятий в области хореографии
+								li Классический экзерсис у станка
+								li Экзерсис на середине зала
+								li Allegro
+								li Вращения
+
+						#target2.article__block
+							h3.article__title О группе
+							h4.h4 Интересная информация о группе:
+							ul.list-circle-pink
+								li Группа 1 коллектива современного танца «Фортуна» является продолжающий;
+								li В группу можно записаться только при наличии танцевального опыта;
+								li Группа один раз в неделю.
+
+						#target3.article__block
+							h3.article__title Достижения
+							p Коллектив – постоянный участник традиционных мероприятий Центра творчества, Московский и Всероссийских конкурсов, концертов на других городских площадках.
+							p В коллективе проводятся общие праздники для детей и родителей, концерты, конкурсы самостоятельных работ, два раза в год открытые уроки по дисциплинам классический и современный танец.
+							p Коллектив современного танца «Фортуна» сотрудничает с Центральным офицерским клубом воздушно-космических сил.
+							.article__white-block 
+								h4.h4 Коллектив современного танца «Фортуна» является:
+								ul.list-pink
+									li Лауреаты Международного конкурса-фестиваля «Сокровища Карелии» (Петрозаводск);
+									li Гран-При Международного конкурса-фестиваля «Превосходство» (Москва);
+									li Лауреаты Международного конкурса- фестиваля «Подсолнух» (Тула);
+									li Лауреаты Международного фестиваля детского и юношеского творчества «Я могу» (Казань);
+									li Гран-При международного конкурса-фестиваля «Созвездие детских талантов» (Москва);
+									li Лауреаты Международного конкурса-фестиваля музыкально-художественного творчества «Открытые страницы Пскова» (Псков);
+									li Лауреаты Международного конкурса-фестиваля «Музыкальный хит» (Москва).
+
+						#target4.article__block 
+							h3.article__title Видео
+							include blocks/video
+						#target5.article__block 
+							h3.article__title Педагог
+							.teacher-card 
+								.teacher-card__pic 
+									img(src="img/teacher1.webp" alt="")
+								.teacher-card__content 
+									h4.teacher-card__title Полянский Кирилл Геннадьевич
+									.teacher-card__text 
+										p Научно доказано, что занятия вокалом способствуют улучшению состояния сердечно-сосудистой системы, укреплению опорно-двигательного аппарата, нормализации сна и настроения.
+										p Научно доказано, что занятия вокалом способствуют улучшению состояния сердечно-сосудистой системы, укреплению опорно-двигательного аппарата, нормализации сна и настроения.
+									a.btn.btn--circle.btn--a(href="card-single.html") Подробнее об педагоге
+										include svg/arrow-circle
+
+						#target6.article__block 
+							h3.article__title Галерея
+							.swiper#swiper-gallery.gallery
+								.swiper-wrapper
+									.swiper-slide.gallery__pic
+										img(src="img/gallery/g1.webp" alt="")
+									.swiper-slide.gallery__pic
+										img(src="img/gallery/g2.webp" alt="")
+									.swiper-slide.gallery__pic
+										img(src="img/gallery/g3.webp" alt="")
+									.swiper-slide.gallery__pic
+										img(src="img/gallery/g4.webp" alt="")
+								.swiper-pagination
+
+
+					.aside 
+						a.aside__link(href="#target1") О программе
+						a.aside__link(href="#target2") О группе
+						a.aside__link(href="#target3") Достижения
+						a.aside__link(href="#target4") Видео
+						a.aside__link(href="#target5") Педагог
+						a.aside__link(href="#target6") Галерея
+						h3.aside__title О программе
+
+		section.section 
+			.container 
+				include blocks/feedback-first

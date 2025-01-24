@@ -1,0 +1,99 @@
+extends layout
+block vars
+block main 
+	main 
+		.breadcrumbs 
+			.container 
+				ul 
+					li
+						a(href="javascript:history.back()")
+							span Назад 
+					li 
+						span /
+					li 
+						a(href="") Контакты
+		section.section 
+			.container 
+				h2.section__title Контакты
+			.contacts 
+				.tab-container
+					.tabs.contacts__head 
+						.container
+							.tab.contacts__head-item.current Центр творчества «На Вадковском»
+							.tab.contacts__head-item Структурное подразделение «Россия молодая»
+							.bird 
+								img(src="img/bird.svg" alt="")
+					.container
+						.tab-pane.current 
+							.contacts__grid 
+								.contacts__item
+									ul 
+										li
+											h4 Адрес:
+											p 127055, г. Москва, Вадковский пер., д. 3
+										li
+											h4 Режим работы:
+											p Пн. – Вс.: с 9:00 до 22:00
+										li
+											h4 Электронная почта:
+											p 
+												a(href="mailto:PolyanskyKG@social.mos.ru") PolyanskyKG@social.mos.ru
+											p 
+												a(href="mailto:navadkovskom@social.mos.ru") navadkovskom@social.mos.ru
+										li
+											h4 Телефон:
+											p
+												a(href="tel:84999726237")  8 (499) 972-62-37
+											p
+												a(href="tel:84999726155")  8 (499) 972-61-55 - директор
+											p
+												a(href="tel:84999726237")  8 (499) 972-62-37 - вахта 
+
+								.contacts__item
+									img(src="img/place1.webp" alt="")
+								.contacts__item.contacts__map 
+									<iframe src="https://yandex.ru/map-widget/v1/?ll=37.597997%2C55.790138&mode=search&oid=1063480081&ol=biz&sctx=ZAAAAAgBEAAaKAoSCRVWKqioGEJAEQ6jIHh83UlAEhIJMV2I1R9h1T8RE9bG2Akvwz8iBgABAgMEBSgKOABAt54BSAFqAnJ1nQHNzMw9oAEAqAEAvQGhtKiPwgEFkdaN%2BwOCAiTQndCwINCS0LDQtNC60L7QstGB0LrQvtC8INGG0LXQvdGC0YCKAgCSAgMyMTOaAgxkZXNrdG9wLW1hcHM%3D&sll=37.597997%2C55.790138&sspn=0.007485%2C0.003047&text=%D0%9D%D0%B0%20%D0%92%D0%B0%D0%B4%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC%20%D1%86%D0%B5%D0%BD%D1%82%D1%80&z=17.48" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+								.contacts__item 
+									h4 Метро:
+									p м. Савёловская - 
+										span (выход к ул. Сущевский вал, пешком ~ 12 мин.)
+									p м. Менделеевская и м. Новослободская - 
+										span (трол. 3, 47 до остановки «Вадковский  переулок»)
+									p м. Белорусская - 
+										span (авт. 12, трол. 18 до остановки «Мебельная фабрика»)
+									p м. Марьина роща - 
+										span (авт. 84, трол. 18 до остановки «Мебельная фабрика»)
+						.tab-pane 
+							.contacts__grid 
+								.contacts__item
+									ul 
+										li
+											h4 Адрес:
+											p 127055, г. Москва, Вадковский пер., д. 3
+										li
+											h4 Режим работы:
+											p Пн. – Вс.: с 9:00 до 22:00
+										li
+											h4 Электронная почта:
+											p PolyanskyKG@social.mos.ru
+											p navadkovskom@social.mos.ru
+										li
+											h4 Телефон:
+											p 8 (499) 972-62-37
+											p 8 (499) 972-61-55 - директор
+											p 8 (499) 972-62-37 - вахта 
+
+								.contacts__item
+									img(src="img/place1.webp" alt="")
+								.contacts__item.contacts__map 
+									<iframe src="https://yandex.ru/map-widget/v1/?ll=37.597997%2C55.790138&mode=search&oid=1063480081&ol=biz&sctx=ZAAAAAgBEAAaKAoSCRVWKqioGEJAEQ6jIHh83UlAEhIJMV2I1R9h1T8RE9bG2Akvwz8iBgABAgMEBSgKOABAt54BSAFqAnJ1nQHNzMw9oAEAqAEAvQGhtKiPwgEFkdaN%2BwOCAiTQndCwINCS0LDQtNC60L7QstGB0LrQvtC8INGG0LXQvdGC0YCKAgCSAgMyMTOaAgxkZXNrdG9wLW1hcHM%3D&sll=37.597997%2C55.790138&sspn=0.007485%2C0.003047&text=%D0%9D%D0%B0%20%D0%92%D0%B0%D0%B4%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%BC%20%D1%86%D0%B5%D0%BD%D1%82%D1%80&z=17.48" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+								.contacts__item 
+									h4 Метро:
+									p м. Савёловская - 
+										span (выход к ул. Сущевский вал, пешком ~ 12 мин.)
+									p м. Менделеевская и м. Новослободская - 
+										span (трол. 3, 47 до остановки «Вадковский  переулок»)
+									p м. Белорусская - 
+										span (авт. 12, трол. 18 до остановки «Мебельная фабрика»)
+									p м. Марьина роща - 
+										span (авт. 84, трол. 18 до остановки «Мебельная фабрика»)

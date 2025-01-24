@@ -1,0 +1,26 @@
+.doc-list {
+	border-radius: 24px;
+	background-color: #fff;
+	padding: 24px;
+	li {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+	a {
+		position: relative;
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		color: var(--color-blue);
+
+		&::before {
+			content: "";
+			background-image: url(../img/icn/pdf.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 24px;
+			height: 32px;
+		}
+	}
+}

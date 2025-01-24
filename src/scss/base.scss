@@ -9,6 +9,7 @@
 	--color-violet: #9FACCE;
 	--color-date: #ADB6CD;
 	--color-text-nav: #B5C2E4;
+	--color-text: #252932;
 	--color-green: #94D388;
 	--color-yellow: #F5C356;
 }
@@ -24,6 +25,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 html,
 body {
 	height: 100%;
@@ -37,6 +42,14 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	margin: 0;
+
+	&.body--blue {
+		background-color: var(--color-blue);
+	}
+
+	&.hidden {
+		overflow: hidden;
+	}
 }
 
 .wrapper {
@@ -97,6 +110,7 @@ p {
 		width: 100%;
 		height: 120px;
 		border-radius: 120px 120px 0 0;
+		text-transform: uppercase;
 
 		@media(max-width: 767px) {
 			border-radius: 40px 40px 0 0;
@@ -105,47 +119,40 @@ p {
 	}
 }
 
-.--before {
-	position: relative;
-	margin-top: 0 !important;
-	padding-top: 220px !important;
-
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		width: 100%;
-		height: 120px;
-		border-radius: 0 0 120px 120px;
-
-		@media(max-width: 767px) {
-			border-radius: 0 0 40px 40px;
-			height: 40px;
-		}
-	}
-	@media(max-width: 767px) {
-		padding-top: 90px !important;
-	}
-}
-
-.--before-white {
-	&:before {
-		background-color: var(--color-body);
-	}
-}
-
-.--after-blue {
-	&:before {
-		background-color: var(--color-blue);
-	}
-}
-
-.--after-white {
-	&::before {
-		background-color: #F1F3F7;
-	}
-}
 
 input {
 	outline: none;
 }
+
+.scroll-top {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	opacity: 0;
+	gap: 5px;
+	right: 50px;
+	bottom: 50px;
+	color: var(--color-light-blue);
+	font-size: 14px;
+	font-weight: 500;
+	padding: 0;
+	background-color: transparent;
+	z-index: 10;
+	transition: all 0.3s ease;
+	cursor: pointer;
+
+	&.vis {
+		opacity: 1;
+	}
+}
+
+.overlay {
+	&.active {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.3);
+		z-index: 999;
+	}
+}
+

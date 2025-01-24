@@ -1,7 +1,16 @@
+block vars
 doctype html
 html(lang="ru")
 	include modules/head
-	body
+	if bodyColor == 'blue'
+		body.body--blue
+		.wrapper
+			include modules/header
+			block main
+			include modules/footer
+			include modules/script
+	else 
+		body
 		.wrapper
 			include modules/header
 			block main

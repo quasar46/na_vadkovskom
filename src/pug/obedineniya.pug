@@ -1,0 +1,40 @@
+extends layout
+block vars 
+	- const bodyColor = "blue"
+block main 
+	main 
+		.breadcrumbs 
+			.container 
+				ul 
+					li
+						a(href="javascript:history.back()")
+							span Назад 
+					li 
+						span /
+					li 
+						a(href="") Родителям
+					li 
+						span /
+					li 
+						soan Объединения
+
+		section.section 
+			.container 
+				.section__head 
+					h2.section__title.section__title--white Объединения
+					.filters 
+						select
+							option(value="Направляения") Направляения
+							option(value="Направляения") Направляения
+							option(value="Направляения") Направляения
+							option(value="Направляения") Направляения
+						select
+							option(value="Возраст") Возраст
+							option(value="4-8 лет") 4-8 лет
+							option(value="8-14 лет") 8-14 лет
+							option(value="18+") 18+
+						.filters__checkbox 
+							input(type="checkbox" id="filterFree" checked)
+							label(for="filterFree") Только бесплатно
+
+				include blocks/directions2

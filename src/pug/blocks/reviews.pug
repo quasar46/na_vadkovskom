@@ -1,13 +1,49 @@
-section.section 
-	.container 
-		.section__head 
-			h2.section__title 
-				span.blue Больше о нас <br>
-				| расскажут отзывы
-			.section__nav 
-				.swiper-nav.reviews__nav
-					.swiper-button-prev
-						include ../svg/arrow-prev
-					.swiper-button-next
-						include ../svg/arrow-next
-					button.btn-border.btn-border--light-blue Оставить отзыв
+.section__head 
+	h2.section__title 
+		span.blue Больше о нас <br>
+		| <span class="blue">расскажут</span> отзывы
+	.section__nav.reviews__nav
+		.slide-next
+			img(src="img/slide-next.svg" alt="")
+		.slide-pic-text
+			img(src="img/slide-pic-text.svg" alt="")
+		.swiper-nav
+			.swiper-button-prev
+				include ../svg/arrow-prev
+			.swiper-button-next
+				include ../svg/arrow-next
+		button.btn-border.btn-border--light-blue Оставить отзыв
+.swiper.reviews#swiper-reviews 
+	.swiper-wrapper 
+		.swiper-slide.reviews__item 
+			p Обожаем наш центр творчества! Много объединений на любой вкус, бюджетно, в историческом здании. Преподаватели все очень дружелюбные и прекрасно умеют работать с детьми. Есть занятия и для взрослых, что очень удобно. Дети там чувствуют себя как дома
+			.reviews__footer 
+				.reviews__pic 
+					img(src="img/ellipse12.webp" alt="")
+				span.reviews__name Мария Иванова
+		.swiper-slide.reviews__item 
+			p Отличный центр детского творчества. Очень много разнообразных направлений. Мастер-классы, праздники, отчётные концерты, выездные мероприятия, доброжелательный персонал и пед состав.
+			.reviews__footer 
+				.reviews__pic 
+					img(src="img/ellipse12.webp" alt="")
+				span.reviews__name Сергей М.
+		.swiper-slide.reviews__item 
+			p Отличный центр детского творчества. Большое разнообразие занятий и соединений. Ребята с удовольствием ходят в это замечательное место. Дети здесь могут провести всё свободное время после школы и в выходные.
+			.reviews__footer 
+				.reviews__pic 
+					img(src="img/ellipse12.webp" alt="")
+				span.reviews__name Татьяна Мультюкова
+		.swiper-slide.reviews__item 
+			p Обожаем наш центр творчества! Много объединений на любой вкус, бюджетно, в историческом здании. Преподаватели все очень дружелюбные и прекрасно умеют работать с детьми. Есть занятия и для взрослых, что очень удобно. Дети там чувствуют себя как дома
+			.reviews__footer 
+				.reviews__pic 
+					img(src="img/ellipse12.webp" alt="")
+				span.reviews__name Мария Иванова
+		.swiper-slide.reviews__item 
+			p Обожаем наш центр творчества! Много объединений на любой вкус, бюджетно, в историческом здании. Преподаватели все очень дружелюбные и прекрасно умеют работать с детьми. Есть занятия и для взрослых, что очень удобно. Дети там чувствуют себя как дома
+			.reviews__footer 
+				.reviews__pic 
+					img(src="img/ellipse12.webp" alt="")
+				span.reviews__name Мария Иванова
+
+	.swiper-scrollbar

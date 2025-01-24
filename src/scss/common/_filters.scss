@@ -1,0 +1,135 @@
+.filters {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff;
+
+	@media(max-width: 767px) {
+		flex-direction: column;
+		width: 100%;
+		align-items: flex-start;
+		gap: 8px;
+	}
+
+	&--dark {
+		color: var(--color-text);
+
+		.custom-select-opener {
+			border-color: var(--color-text);
+		}
+
+		.custom-select-container {
+			&::after {
+				background-image: url("../img/icn/arrow-up-doun-black.svg");
+			}
+		}
+	}
+}
+
+.custom-select-opener {
+	background-color: transparent;
+	border: 1px solid #FFFEF8;
+	border-radius: 12px;
+	padding: 13px 16px;
+}
+
+.is-open .custom-select-opener {
+	background-color: #FFFEF8;
+	color: var(--color-pink);
+}
+
+.custom-select-panel {
+	background-color: #F1F3F7;
+	color: var(--color-blue);
+	border-radius: 12px;
+	margin-top: 6px;
+	z-index: 11;
+}
+
+.custom-select-option.has-focus {
+	background-color: transparent;
+	color: var(--color-pink);
+}
+
+.custom-select-option.is-selected::before {
+	display: none;
+}
+
+.custom-select-option {
+	display: flex;
+	justify-content: space-between;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 22px;
+		height: 22px;
+		border-radius: 2px;
+		border: 2px solid var(--color-blue);
+	}
+}
+
+.custom-select-option.is-selected::after {
+	background-image: url("../img/icn/square-check.svg");
+	width: 24px;
+	height: 24px;
+	border: none;
+}
+
+.custom-select-container {
+	width: 200px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		right: 16px;
+		top: 50%;
+		transform: translateY(-50%);
+		background-image: url("../img/icn/arrow-up-doun.svg");
+		width: 16px;
+		height: 16px;
+		pointer-events: none;
+	}
+
+	&.is-open {
+		&::after {
+			background-image: url("../img/icn/arrow-up-doun-active.svg");
+		}
+	}
+
+	@media(max-width: 767px) {
+		width: 100%;
+	}
+}
+
+.filters__checkbox {
+	input {
+		position: absolute;
+		z-index: -1;
+		overflow: hidden;
+		visibility: hidden;
+		width: 0;
+		height: 0;
+
+		&:checked+label::before {
+			background-image: url("../img/icn/square-checked.svg");
+		}
+	}
+
+	label {
+		font-size: 18px;
+		font-weight: 500;
+		color: #fff;
+		display: flex;
+		gap: 8px;
+
+		&::before {
+			content: "";
+			width: 24px;
+			height: 24px;
+			background-image: url('../img/icn/square-check-white.svg');
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.clubs-block {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	@media(max-width: 767px) {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+}
+
+.clubs-block__item {
+	background-color: #fff;
+	border-radius: 32px;
+}
+
+.clubs-block__pic {
+	padding: 8px;
+	border-radius: 24px;
+}
+
+.clubs-block__title {
+	font-size: 22px;
+	font-weight: 600;
+	color: var(--color-blue);
+	text-transform: uppercase;
+	padding: 24px;
+	@media(max-width: 767px) {
+		font-size: 18px;
+		padding: 16px 8px;
+	}
+}

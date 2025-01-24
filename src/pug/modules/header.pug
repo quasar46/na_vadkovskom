@@ -2,8 +2,8 @@ header.header
 	.container 
 		.header__wrap 
 			.header__top 
-				a.header__logo(href="")
-					img(src="../img/logo.svg" alt="")
+				a.header__logo(href="index.html")
+					img(src="img/logo.svg" alt="")
 				.header__search
 					input(type="text" placeholder="Поиск")
 				.header__right
@@ -30,76 +30,7 @@ header.header
 				.header__menu 
 					| Меню
 					.burger
-			.menu 
-				.menu__close 
-					img(src="img/close.svg" alt="")
-				.menu__item
-					a
-						| О школе
-						include ../svg/arrow
-					.submenu
-						.submenu__links
-							a(href="").submenu__item Команда
-							a(href="").submenu__item Работа в центре
-							a(href="").submenu__item Документы
-							a(href="").submenu__item Отчеты
-							a(href="").submenu__item Объединения
-							a(href="").submenu__item Новости
-							a(href="").submenu__item Филиалы
-				.menu__item
-					a(href="") Новости
-				.menu__item
-					a
-						| Детям
-						include ../svg/arrow
-					.submenu
-						.submenu__links 
-							a(href="").submenu__item Объединения
-							a(href="").submenu__item Анонсы мероприятий
-							a(href="").submenu__item План мероприятий на месяц
-				.menu__item 
-					a
-						| Родителям
-						include ../svg/arrow
-					.submenu
-						.submenu__links 
-							a(href="").submenu__item Расписание
-							a(href="").submenu__item Объединения
-				.menu__item 
-					a
-						| Педагогам
-						include ../svg/arrow
-					.submenu
-						.submenu__links 
-							a(href="").submenu__item Вакансии
-							a(href="").submenu__item Курсы
-				.menu__item 
-					a
-						| Долголетие
-						include ../svg/arrow
-					.submenu
-						.submenu__links 
-							a(href="").submenu__item Расписание
-							a(href="").submenu__item Объединения
-							a(href="").submenu__item Отзывы
-				.menu__item 
-					a
-						| Методическая площадка
-						include ../svg/arrow
-					.submenu
-						.submenu__links
-							a(href="").submenu__item Документы
-							a(href="").submenu__item Отчеты
-							a(href="").submenu__item Методисты
-				.menu__item
-					a(href="") Контакты
-				.menu__contacts
-					a(href="" target="_blank")
-						include ../svg/vk
-					a(href="" target="_blank").menu__contacts-tg 
-						include ../svg/tg-icn-small
-						| Наш канал
-					a(href="tel:84999726237").menu__contacts-phone 8 (499) 972-62-37
-					a(href="maito:navadkovskom@social.mos.ru").menu__contacts-mail 
-						include ../svg/mail-icn 
-						| navadkovskom@social.mos.ru
+			include ../blocks/menu
+
+div(style="background-color: black; color: #fff; border: 1px solid red; padding: 10px; position: fixed; bottom: 20px; left: 20px; text-transform: uppercase; z-index: 999999;")
+	a(href="sitemap.html") Карта сайта 

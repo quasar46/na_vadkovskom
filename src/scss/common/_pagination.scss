@@ -1,0 +1,22 @@
+.pagination {
+	color: var(--color-light-blue);
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+
+	&>* {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+.pagination__current {
+	color: var(--color-blue);
+}
+
+.body--blue {
+	.pagination__current {
+		color: #fff;
+	}
+}

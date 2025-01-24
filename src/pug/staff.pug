@@ -1,0 +1,301 @@
+extends layout
+block vars 
+	- const bodyColor = "blue"
+block main 
+	main
+		.breadcrumbs 
+			.container 
+				ul 
+					li 
+						a(href="javascript:history.back()") 
+							span Назад
+					li 
+						span /
+					li 
+						span Наши сотрудники
+
+		section.section 
+			.container 
+				.section__head
+					h2.section__title.section__title--white наши сотрудники
+					.filters 
+						select
+							option(value="") Тип сотрудника
+							option(value="") Тип сотрудника
+						select
+							option(value="") Филиал
+							option(value="") Филиал
+							option(value="") Филиал
+				.staff.tab-container 
+					.staff__head.tabs 
+						.swiper#swiper-staff
+							.swiper-wrapper
+								.current.swiper-slide.tab.staff__head-item
+									span Администрация ЦТ «На Вадковском»
+								.swiper-slide.tab.staff__head-item
+									span Методисты ЦТ «На Вадковском»
+								.swiper-slide.tab.staff__head-item
+									span Педагогический состав ЦТ «На Вадковском»
+								.swiper-slide.tab.staff__head-item
+									span Педагогический состав СП «Россия молодая»
+						.staff__nav
+							.swiper-button-next
+								img(src="img/arrow-next.svg" alt="")
+
+					.staff__body
+						.tab-pane.current
+							.staff-card
+								.staff-card__pic 
+									img(src="img/teacher1.webp" alt="")
+									a.btn.btn--circle.btn--e(href="card-single.html") Подробнее
+										include svg/arrow-circle
+								.staff-card__content 
+									h4.staff-card__title Полянский Кирилл Геннадьевич
+									.staff-card__descr 
+										span Директор Центра творчества "На Вадковском"
+										span Образование: МГТУ им. Баумана
+									.staff-card__links 
+										ul 
+											li
+												img(src="img/icn/icn-map.svg" alt="")
+												span 127055, г. Москва, Вадковский пер., д. 3
+											li
+												img(src="img/icn/icn-tel.svg" alt="")
+												a(href="tel:84999726155") 8 (499) 972-61-55
+											li
+												img(src="img/icn/icn-mail.svg" alt="")
+												a(href="mailto:kir.polyansky@gmail.com") kir.polyansky@gmail.com
+							.staff-card
+								.staff-card__pic 
+									img(src="img/team/6.webp" alt="")
+									a.btn.btn--circle.btn--e(href="card-single.html") Подробнее
+										include svg/arrow-circle
+								.staff-card__content 
+									h4.staff-card__title Ермакова Наталья Петровна
+									.staff-card__descr 
+										span Заместитель директора по воспитательной работе
+										span Образование: МГТУ им. Баумана
+									.staff-card__links 
+										ul 
+											li
+												img(src="img/icn/icn-map.svg" alt="")
+												span 127055, г. Москва, Вадковский пер., д. 3
+											li
+												img(src="img/icn/icn-tel.svg" alt="")
+												a(href="tel:84999721934") 8 (499) 972-19-34
+											li
+												img(src="img/icn/icn-mail.svg" alt="")
+												a(href="mailto:np_ermakova@mail.ru") np_ermakova@mail.ru
+							.staff-card
+								.staff-card__pic 
+									img(src="img/team/7.webp" alt="")
+									a.btn.btn--circle.btn--e(href="card-single.html") Подробнее
+										include svg/arrow-circle
+								.staff-card__content 
+									h4.staff-card__title Павлова Оксана Юрьевна
+									.staff-card__descr 
+										span Заместитель директора по учебной части
+										span Образование: МГТУ им. Баумана
+									.staff-card__links 
+										ul 
+											li
+												img(src="img/icn/icn-map.svg" alt="")
+												span 127055, г. Москва, Вадковский пер., д. 3
+											li
+												img(src="img/icn/icn-tel.svg" alt="")
+												a(href="tel:84999726155") 8 (499) 972-61-55
+											li
+												img(src="img/icn/icn-mail.svg" alt="")
+												a(href="mailto:kir.polyansky@gmail.com") kir.polyansky@gmail.com
+							.staff-card
+								.staff-card__pic 
+									img(src="img/team/8.webp" alt="")
+									a.btn.btn--circle.btn--e(href="card-single.html") Подробнее
+										include svg/arrow-circle
+								.staff-card__content 
+									h4.staff-card__title Суслина Надежда Антоновна
+									.staff-card__descr 
+										span Заместитель директора по информационно-коммуникативным технологиям и развитию
+										span Образование: МГТУ им. Баумана
+									.staff-card__links 
+										ul 
+											li
+												img(src="img/icn/icn-map.svg" alt="")
+												span 127055, г. Москва, Вадковский пер. д 3
+											li
+												img(src="img/icn/icn-mail.svg" alt="")
+												a(href="mailto:SuslinaNA@social.mos.ru") SuslinaNA@social.mos.ru
+							.staff-card
+								.staff-card__pic 
+									img(src="img/teacher1.webp" alt="")
+									a.btn.btn--circle.btn--e(href="card-single.html") Подробнее
+										include svg/arrow-circle
+								.staff-card__content 
+									h4.staff-card__title Бердников Максим Александрович
+									.staff-card__descr 
+										span Заместитель директора по безопасности
+										span Образование: Академия Государственной противопожарной службы МЧС России
+									.staff-card__links 
+										ul 
+											li
+												img(src="img/icn/icn-map.svg" alt="")
+												span 127055, г. Москва, Вадковский пер. д 3
+											li
+												img(src="img/icn/icn-tel.svg" alt="")
+												a(href="tel:89263970302") 8 (926) 397-03-02
+											li
+												img(src="img/icn/icn-mail.svg" alt="")
+												a(href="mailto:BerdnikovMA@social.mos.ru") BerdnikovMA@social.mos.ru
+							.staff-card
+								.staff-card__pic 
+									img(src="img/team/9.webp" alt="")
+									a.btn.btn--circle.btn--e(href="card-single.html") Подробнее
+										include svg/arrow-circle
+								.staff-card__content 
+									h4.staff-card__title Робашевская Елена Ивановна
+									.staff-card__descr 
+										span Руководитель методического отдела, старший методист, педагог дополнительного образования
+										span Образование: МГПИ им. В.И. Ленина
+									.staff-card__links 
+										ul 
+											li
+												img(src="img/icn/icn-map.svg" alt="")
+												span 127055, г. Москва, Вадковский пер., д. 3
+											li
+												img(src="img/icn/icn-tel.svg" alt="")
+												a(href="tel:84996092046") 8 (499) 609-20-46
+											li
+												img(src="img/icn/icn-mail.svg" alt="")
+												a(href="mailto:robeliv@mail.ru") robeliv@mail.ru
+							.staff-card
+								.staff-card__pic 
+									img(src="img/team/10.webp" alt="")
+									a.btn.btn--circle.btn--e(href="card-single.html") Подробнее
+										include svg/arrow-circle
+								.staff-card__content 
+									h4.staff-card__title Павлова Оксана Юрьевна
+									.staff-card__descr 
+										span Заместитель директора по учебной части
+										span Образование: МГТУ им. Баумана
+									.staff-card__links 
+										ul 
+											li
+												img(src="img/icn/icn-map.svg" alt="")
+												span 127055, г. Москва, Вадковский пер., д. 3
+											li
+												img(src="img/icn/icn-tel.svg" alt="")
+												a(href="tel:84999726155") 8 (499) 972-61-55
+											li
+												img(src="img/icn/icn-mail.svg" alt="")
+												a(href="mailto:kir.polyansky@gmail.com") kir.polyansky@gmail.com
+							.staff-card
+								.staff-card__pic 
+									img(src="img/team/11.webp" alt="")
+									a.btn.btn--circle.btn--e(href="card-single.html") Подробнее
+										include svg/arrow-circle
+								.staff-card__content 
+									h4.staff-card__title Суслина Надежда Антоновна
+									.staff-card__descr 
+										span Заместитель директора по информационно-коммуникативным технологиям и развитию
+										span Образование: МГТУ им. Баумана
+									.staff-card__links 
+										ul 
+											li
+												img(src="img/icn/icn-map.svg" alt="")
+												span 127055, г. Москва, Вадковский пер. д 3
+											li
+												img(src="img/icn/icn-map.svg" alt="")
+												a(href="mailto:SuslinaNA@social.mos.ru") SuslinaNA@social.mos.ru
+							.staff-card
+								.staff-card__pic 
+									img(src="img/team/12.webp" alt="")
+									a.btn.btn--circle.btn--e(href="card-single.html") Подробнее
+										include svg/arrow-circle
+								.staff-card__content 
+									h4.staff-card__title Бердников Максим Александрович
+									.staff-card__descr 
+										span Заместитель директора по безопасности
+										span Образование: Академия Государственной противопожарной службы МЧС России
+									.staff-card__links 
+										ul 
+											li
+												img(src="img/icn/icn-map.svg" alt="")
+												span 127055, г. Москва, Вадковский пер. д 3
+											li
+												img(src="img/icn/icn-tel.svg" alt="")
+												a(href="tel:89263970302") 8 (926) 397-03-02
+											li
+												img(src="img/icn/icn-mail.svg" alt="")
+												a(href="mailto:BerdnikovMA@social.mos.ru") BerdnikovMA@social.mos.ru
+							.staff-card
+								.staff-card__pic 
+									img(src="img/team/6.webp" alt="")
+									a.btn.btn--circle.btn--e(href="card-single.html") Подробнее
+										include svg/arrow-circle
+								.staff-card__content 
+									h4.staff-card__title Робашевская Елена Ивановна
+									.staff-card__descr 
+										span Руководитель методического отдела, старший методист, педагог дополнительного образования
+										span Образование: МГПИ им. В.И. Ленина
+									.staff-card__links 
+										ul 
+											li
+												img(src="img/icn/icn-map.svg" alt="")
+												span 127055, г. Москва, Вадковский пер., д. 3
+											li
+												img(src="img/icn/icn-tel.svg" alt="")
+												a(href="tel:84996092046") 8 (499) 609-20-46
+											li
+												img(src="img/icn/icn-mail.svg" alt="")
+												a(href="mailto:robeliv@mail.ru") robeliv@mail.ru
+						.tab-pane 
+						.tab-pane 
+						.tab-pane 
+					.pagination
+						a(href="").pagination__current  01
+						a(href="")  02
+						a(href="")  03
+						span ...
+						a(href="") 07 
+
+
+		section.section 
+			.container 
+				.section__head 
+					h2.section__title.section__title--white Доступные вакансии
+					.section__head-pic 
+						img(src="img/txt-enjoy.svg" alt="")
+				.swiper.vacansion#swiper-vacansion
+					.swiper-wrapper
+						a(href="").swiper-slide.vacansion__item
+							.vacansion__head от 50.000 рублей
+							.vacansion__body 
+								h3 Педагог
+								p Здесь небольшое описание клубы в 4-8 строчек
+							.vacansion__footer 
+								button.btn.btn--circle.btn--a.showModal1 Связаться с нами 
+									include svg/arrow-circle
+						a(href="").swiper-slide.vacansion__item
+							.vacansion__head от 50.000 рублей
+							.vacansion__body 
+								h3 Заместитель директора по безопасности
+								p Здесь небольшое описание клубы в 4-8 строчек
+							.vacansion__footer 
+								button.btn.btn--circle.btn--a.showModal1 Связаться с нами 
+									include svg/arrow-circle
+						a(href="").swiper-slide.vacansion__item
+							.vacansion__head от 50.000 рублей
+							.vacansion__body 
+								h3 Заместитель директора по информационно-коммуникативным технологиям и развитию
+								p Здесь небольшое описание клубы в 4-8 строчек
+							.vacansion__footer 
+								button.btn.btn--circle.btn--a.showModal1 Связаться с нами 
+									include svg/arrow-circle
+						a(href="").swiper-slide.vacansion__item
+							.vacansion__head от 50.000 рублей
+							.vacansion__body 
+								h3 Педагог
+								p Здесь небольшое описание клубы в 4-8 строчек
+							.vacansion__footer 
+								button.btn.btn--circle.btn--a.showModal1 Связаться с нами 
+									include svg/arrow-circle

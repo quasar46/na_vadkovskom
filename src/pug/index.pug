@@ -1,126 +1,27 @@
 extends layout
+block vars 
+	- var mainSliderFirstBtn = "Записаться в студию"
+	- var mainSliderSecondBtn = "Об организации"
+	- var mainSliderTitle1 = "Решаем задачи дополнительного образования детей, подростков и молодежи"
+	- var mainSliderTitle2 = "Решаем задачи дополнительного образования детей, подростков и молодежи"
+	- var mainSliderTitle3 = "Решаем задачи дополнительного образования детей, подростков и молодежи"
+	- var mainSliderText1 = "Многопрофильный разноуровневый образовательно-досуговый комплекс, решающий задачи дополнительного образования детей, подростков и молодежи"
+	- var mainSliderText2 = "Многопрофильный разноуровневый образовательно-досуговый комплекс, решающий задачи дополнительного образования детей, подростков и молодежи"
+	- var mainSliderText3 = "Многопрофильный разноуровневый образовательно-досуговый комплекс, решающий задачи дополнительного образования детей, подростков и молодежи"
+	- var mainSliderUrlPic1 = "img/s1.webp"
+	- var mainSliderUrlPic2 = "img/s1.webp"
+
 block main 
 	main
-		section.section
-			.container 
-				.swiper.main-slider 
-					.swiper-wrapper 
-						.swiper-slide.main-block 
-							.main-block__pic
-								img(src='img/s1.webp' alt='')
-							.main-block__content
-								h2.main-block__title Решаем задачи дополнительного образования детей, подростков и молодежи
-								.main-block__descr
-									p Многопрофильный разноуровневый образовательно-досуговый комплекс, решающий задачи дополнительного образования детей, подростков и молодежи
-									.main-block__btns 
-										a.btn.btn--circle.btn--a(href="") Записаться в студию
-											include svg/arrow-circle
-										a.main-block__btn(href="") Об организации
-											include svg/arrow-circle-sm
-						.swiper-slide.main-block 
-							.main-block__pic
-								img(src='img/s1.webp' alt='')
-							.main-block__content
-								h2.main-block__title Решаем задачи дополнительного образования детей, подростков и молодежи
-								.main-block__descr
-									p Многопрофильный разноуровневый образовательно-досуговый комплекс, решающий задачи дополнительного образования детей, подростков и молодежи
-									.main-block__btns 
-										a.btn.btn--circle.btn--a(href="") Записаться в студию
-											include svg/arrow-circle
-										a.main-block__btn(href="") Об организации
-											include svg/arrow-circle-sm
-					.main-block__nav
-						.swiper-button-prev
-							//- img(src='img/arrow_left.svg' alt='') 
-							include svg/arrow-prev-trans
-						.swiper-button-next
-							//- img(src='img/arrow_right.svg' alt='')
-							include svg/arrow-next-trans
-
-		section.section.news-block
-			.container 
-				.section__head 
-					h2.section__title.news-block__title 
-						i 
-							span.blue Узнайте  
-							| Что 
-						i происходит в школе?
-					.news-block__aside.animate
-						a(href="").btn-border.btn-border--light-blue  
-							| Все новости
-						.animate-icn
-							img(src="img/tudasuda.gif" alt="")
-						.swiper-nav.news-block__nav
-							.swiper-button-prev
-								include svg/arrow-prev
-							.swiper-button-next
-								include svg/arrow-next
-				.news-block__wrap 
-					.swiper.swiper--scroll.news-block-slider 
-						.swiper-wrapper 
-							a.swiper-slide.news-block-slider__item(href="")
-								.news-block-slider__pic
-									img(src='img/s2.webp' alt='')
-								.news-block-slider__content
-									span.news-block-slider__date 12.08.2024
-									span.news-block-slider__title Запись на новый учебный 2024-2025 год
-									p.news-block-slider__text Обсуждаем переход на новую систему записи через портал mos.ru. Команда столкнулась со сложностями, но готова помочь. Предлагается инструкция для облегчения процесса.
-									button.btn-more Подробнее
-										include svg/arrow-more
-
-							a.swiper-slide.news-block-slider__item(href="")
-								.news-block-slider__pic
-									img(src='img/s3.webp' alt='')
-								.news-block-slider__content
-									span.news-block-slider__date 12.08.2024
-									span.news-block-slider__title Праздник «Вадковский собирает друзей»
-									p.news-block-slider__text 2 сентября традиционно новый учебный год мы открываем со Дня открытых дверей. Все педагоги ждут к себе в гости детей и родителей, чтобы рассказать о деятельности своего объединения и дать возможность посетителям выбрать наиболее понравившееся объединение для занятий.
-									button.btn-more Подробнее
-										include svg/arrow-more
-							a.swiper-slide.news-block-slider__item(href="")
-								.news-block-slider__pic
-									img(src='img/s4.webp' alt='')
-								.news-block-slider__content
-									span.news-block-slider__date 12.08.2024
-									span.news-block-slider__title День открытых дверей
-									p.news-block-slider__text 2 сентября традиционно новый учебный год мы открываем со Дня открытых дверей. Все педагоги ждут к себе в гости детей и родителей, чтобы рассказать о деятельности своего объединения и дать возможность посетителям выбрать наиболее понравившееся объединение для занятий.
-									button.btn-more Подробнее
-										include svg/arrow-more
-							a.swiper-slide.news-block-slider__item(href="")
-								.news-block-slider__pic
-									img(src='img/s5.webp' alt='')
-								.news-block-slider__content
-									span.news-block-slider__date 12.08.2024
-									span.news-block-slider__title Запись на новый учебный 2024-2025 год
-									p.news-block-slider__text Обсуждаем переход на новую систему записи через портал mos.ru. Команда столкнулась со сложностями, но готова помочь. Предлагается инструкция для облегчения процесса.
-									button.btn-more Подробнее
-										include svg/arrow-more
-							a.swiper-slide.news-block-slider__item(href="")
-								.news-block-slider__pic
-									img(src='img/s5.webp' alt='')
-								.news-block-slider__content
-									span.news-block-slider__date 12.08.2024
-									span.news-block-slider__title Запись на новый учебный 2024-2025 год
-									p.news-block-slider__text Обсуждаем переход на новую систему записи через портал mos.ru. Команда столкнулась со сложностями, но готова помочь. Предлагается инструкция для облегчения процесса.
-									button.btn-more Подробнее
-										include svg/arrow-more
-							a.swiper-slide.news-block-slider__item(href="")
-								.news-block-slider__pic
-									img(src='img/s3.webp' alt='')
-								.news-block-slider__content
-									span.news-block-slider__date 12.08.2024
-									span.news-block-slider__title Запись на новый учебный 2024-2025 год
-									p.news-block-slider__text Обсуждаем переход на новую систему записи через портал mos.ru. Команда столкнулась со сложностями, но готова помочь. Предлагается инструкция для облегчения процесса.
-									button.btn-more Подробнее
-										include svg/arrow-more
-						.swiper-scrollbar
+		include blocks/main-slider
+		include blocks/news-block
 
 		section.section.marquee(data-duration='5000' data-duplicated='true')
 			span о Центре творчества «На  Вадковском»
 			span о Центре творчества «На  Вадковском»
 			span о Центре творчества «На  Вадковском»
 
-		section.section.--after.--after-blue
+		section.section
 			.container
 				.main-block.main-block--mode 
 					.main-block__pic
@@ -128,11 +29,12 @@ block main
 					.main-block__content.main-block__content--mode
 						h2.main-block__title Центр творчества «На Вадковском» — это жизнь, полная эмоций, творческого развития, общения и семейного тепла
 						.main-block__descr
-							p Многопрофильный разноуровневый образовательно-досуговый комплекс, решающий задачи дополнительного образования детей, подростков и молодежи
+							//- p Многопрофильный разноуровневый образовательно-досуговый комплекс, решающий задачи дополнительного образования детей, подростков и молодежи
 							.main-block__btns 
-								a(href="").btn-border.btn-border--white Узнать подробнее 
-					.main-block__play
+								a(href="about.html").btn-border.btn-border--white Узнать подробнее 
+					a(href="https://rutube.ru/video/d2881ff24f92c61f706b33d34a00a0f9/?t=9&r=plemwd").main-block__play
 						include svg/play
+					include blocks/modal-video
 
 				.mission
 					.mission__aside 
@@ -161,68 +63,23 @@ block main
 		include blocks/directions
 
 		include blocks/advantages
-
-		include blocks/reviews
-
-		section.section.block-about 
-			.container 
-				.block-about__wrap 
-
-		include blocks/block-actionB
-
-		include blocks/clubs
-
+		//- include blocks/block-actionB
 
 		section.section
 			.container 
 				h2.section__title.section__title--center.gallery-block__title будем рады видеть вас <br> в цт «На вадковском»
 				.gallery-block 
-					img.gallery-block__pic(data-aos="fade-up" src="img/gallery/Rectangle 36.webp" alt="")
-					img.gallery-block__pic(data-aos="fade-up" src="img/gallery/Rectangle 37.webp" alt="")
-					img.gallery-block__pic(data-aos="fade-up" src="img/gallery/Rectangle 38.webp" alt="")
-					img.gallery-block__pic(data-aos="fade-up" src="img/gallery/Rectangle 39.webp" alt="")
-					img.gallery-block__pic(data-aos="fade-up" src="img/gallery/Rectangle 40.webp" alt="")
-					img.gallery-block__pic(data-aos="fade-up" src="img/gallery/Rectangle 41.webp" alt="")
-					img.gallery-block__pic(data-aos="fade-up" src="img/gallery/Rectangle 42.webp" alt="")
-					img.gallery-block__pic(data-aos="fade-up" src="img/gallery/Rectangle 43.webp" alt="")
-					img.gallery-block__pic(data-aos="fade-up" src="img/gallery/Rectangle 44.webp" alt="")
-					img.gallery-block__pic(data-aos="fade-up" src="img/gallery/Rectangle 45.webp" alt="")
-					img.gallery-block__pic(data-aos="fade-up" src="img/gallery/Rectangle 46.webp" alt="")
-					img.gallery-block__pic(data-aos="fade-up" src="img/gallery/Rectangle 47.webp" alt="")
+					img.gallery-block__pic(src="img/gallery/Rectangle 36.webp" alt="")
+					img.gallery-block__pic(src="img/gallery/Rectangle 37.webp" alt="")
+					img.gallery-block__pic(src="img/gallery/Rectangle 38.webp" alt="")
+					img.gallery-block__pic(src="img/gallery/Rectangle 39.webp" alt="")
+					img.gallery-block__pic(src="img/gallery/Rectangle 40.webp" alt="")
+					img.gallery-block__pic(src="img/gallery/Rectangle 41.webp" alt="")
+					img.gallery-block__pic(src="img/gallery/Rectangle 42.webp" alt="")
+					img.gallery-block__pic(src="img/gallery/Rectangle 43.webp" alt="")
+					img.gallery-block__pic(src="img/gallery/Rectangle 44.webp" alt="")
+					img.gallery-block__pic(src="img/gallery/Rectangle 45.webp" alt="")
+					img.gallery-block__pic(src="img/gallery/Rectangle 46.webp" alt="")
+					img.gallery-block__pic(src="img/gallery/Rectangle 47.webp" alt="")
 
-
-		section.section.contacts-block
-			.container 
-				h2.section__title.section__title--center Контакты
-				.contacts-block__wrap 
-					.contacts-block__item 
-						.contacts-block__row
-							h4.contacts-block__title Адрес:
-							p г. Москва, Вадковский пер., д. 3
-						.contacts-block__row 
-							h4.contacts-block__title Режим работы:
-							p Пн. – Вс.: с 9:00 до 22:00
-						.contacts-block__row
-							h4.contacts-block__title Телефон:
-							a(href="") 8 (499) 972-62-37
-							a(href="") 8 (499) 972-61-55 - 
-								span директор
-							a(href="") 8 (499) 972-62-37 - 
-								span вахта
-					.contacts-block__item 
-						.contacts-block__row
-							h4.contacts-block__title Адрес
-							p г. Москва, пр. Мира, д. 43
-						.contacts-block__row
-							h4.contacts-block__title Режим работы:
-							p Пн. – Вс.: с 9:00 до 22:00
-						.contacts-block__row
-							h4.contacts-block__title Телефон:
-							p 8 (495) 681-03-65
-					.contacts-block__item
-						h4.contacts-block__title-soc Соцсети
-						.contacts-block__social
-							a(href="" target="_blank")
-								include svg/vk2
-							a(href="" target="_blank")
-								include svg/tg2
+		include blocks/contacts-block

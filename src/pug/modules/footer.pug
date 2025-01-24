@@ -1,4 +1,10 @@
-footer.footer.--before.--before-white
+if bodyColor == 'blue'
+	- var footerBlue = 'bodyBlue'
+
+if footerBeforeDisable == 'true'
+	- var beforeDisable = 'before-disable'
+
+footer.footer(class=footerBlue class=beforeDisable)
 	.container 
 		.footer__wrap
 			.footer__top
@@ -84,3 +90,44 @@ footer.footer.--before.--before-white
 					form.form1(action="") 
 						input(type="text" placeholder="Ваш e-mail")
 						input(type="submit" value="Подписаться")
+
+.overlay
+include ../blocks/up
+.modal#modal1
+	.modal__wrap
+		button.modal__close 
+			span 
+			span
+		h2.modal__title Записаться в студию
+		form(action="").modal__form
+			ul 
+				li
+					input(type="text" placeholder="Имя")
+				li
+					input(type="text" placeholder="Электронная почта")
+				li
+					input(type="text" placeholder="Номер телефона") 
+			button.btn.btn--a.showModal1(type="submit") Записаться в студию
+
+.modal#modal2
+	.modal__wrap
+		button.modal__close 
+			span 
+			span
+		h2.modal__title Записаться в клуб
+		form(action="").modal__form
+			ul 
+				li
+					input(type="text" placeholder="Имя")
+				li
+					input(type="text" placeholder="Электронная почта")
+				li
+					input(type="text" placeholder="Номер телефона") 
+			button.btn.btn--a.showModal1(type="submit") Записаться в клуб
+
+.modal#modal3 
+	.modal__wrap 
+		button.modal__close 
+			span 
+			span 
+		h2.modal__title.modal__title--mode Спасибо за обращение! <br> В ближайшее время <br> наши специалсты <br> свяжуться с вами.

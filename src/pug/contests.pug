@@ -1,0 +1,191 @@
+extends layout
+block vars 
+
+block main 
+	main
+		.breadcrumbs 
+			.container 
+				ul 
+					li 
+						a(href="javascript:history.back()") 
+							span Назад
+					li 
+						span /
+					li 
+						span Конкурсы и фестивали
+
+		.contest  
+			.container 
+				.contest__head 
+					h2.section__title.contest__title конкурсы и фестивали
+					.filters.filters--dark
+						select
+							option(value="") Тип
+							option(value="") Тип
+							option(value="") Тип
+						select
+							option(value="") Направления
+							option(value="") Направления
+							option(value="") Направления
+						select
+							option(value="") Дата
+							option(value="") Дата
+							option(value="") Дата
+
+
+		section.section 
+			.container 
+				.contest-item 
+					h3.contest-item__title КОНКУРС ДЕТСКОГО И СЕМЕЙНОГО ТВОРЧЕСТВА «ЗИМНИЕ УЗОРЫ»
+					.contest-item__wrap 
+						.contest-item__pic 
+							img(src="img/contests/1.webp" alt="")
+						.contest-item__content
+							.contest-item__block
+								span.contest-item__title-small Цели и задачи конкурса–фестиваля
+								p.contest-item__subtitle Создание условий для творческой реализации детей и их семей по направлению изобразительное искусство и декоративно-прикладное творчество
+							.contest-item__block
+								span.contest-item__title-small Номинации 
+								ul.list-pink 
+									li Семейное творчество (ИЗО, ДПИ)
+									li Изобразительное искусство, индивидуально
+									li Декоративно-прикладное творчество, индивидуально
+								.contest-item__text 
+									p Конкурс проводится с 25 ноября по 20 декабря 2024 года
+									p Электронный адрес: nuushka@gmail.com
+									p Контактный телефон: 8 (915) 069-28-51 Бутушина Анна Викторовна
+							.contest-item__footer
+								a.btn.btn--circle.btn--a Положение о конкурсе
+									include svg/arrow-circle
+				.contest-item 
+					h3.contest-item__title VI ФЕСТИВАЛЬ-КОНКУРС АВТОРСКОЙ ПЕСНИ “ЛИЦА”
+					.contest-item__wrap 
+						.contest-item__pic 
+							img(src="img/contests/2.webp" alt="")
+						.contest-item__content
+							.contest-item__block
+								span.contest-item__title-small Цель конкурса
+								p.contest-item__subtitle Помощь во взаимодействии, обмен опытом и дальнейшее совместное творчество детских, молодежных и семейных коллективов, учреждений Департамента Труда и Социальной защиты населения, Департамента Образования, Департамента Культуры по продвижению и развитию интереса к авторской песне.
+							.contest-item__block
+								span.contest-item__title-small  Задачи конкурса
+								ul.list-pink 
+									li Приобщение детей, подростков, молодежи к традициям и культуре авторской песни
+									li Содействие в становлении и развитии коллективов в их творческом росте, выявление и популяризация новых авторов, исполнителей и авторских коллективов
+									li Создание условий для приобщения детей и молодежи к разработке и реализации видеопроектов с использованием новых технологий
+									li Привлечение внимания государственных, общественных и коммерческих организаций к поддержке авторской песни
+							.contest-item__block
+								span.contest-item__title-small  Номинации
+								ul.list-pink 
+									li Авторская песня (музыка, слова или вся песня собственного сочинения)
+									li Исполнитель авторской песни (песня любимого автора)
+									li Видеоклип (на авторскую песню собственного сочинения или песню любимого автора)
+									li Художественное слово
+									li Патриотическая песня (песни, стихотворения, видео-клип)
+								.contest-item__text 
+									p Конкурс проводится с 25 ноября по 20 декабря 2024 года
+									p Электронный адрес: nuushka@gmail.com
+									p Контактный телефон: 8 (915) 069-28-51 Бутушина Анна Викторовна
+							.contest-item__footer
+								a.btn.btn--circle.btn--a Положение о конкурсе
+									include svg/arrow-circle
+				.contest-item 
+					h3.contest-item__title III ОТКРЫТЫЙ КОНКУРС-ФЕСТИВАЛЬ ИСПОЛНИТЕЛЕЙ ЭСТРАДНО-ДЖАЗОВОЙ МУЗЫКИ “ВЕСЬ ЭТОТ ДЖАЗ”
+					.contest-item__wrap 
+						.contest-item__pic 
+							img(src="img/contests/3.webp" alt="")
+						.contest-item__content
+							.contest-item__block
+								span.contest-item__title-small Цели и задачи конкурса–фестиваля
+								p.contest-item__subtitle Выявление и поддержка талантливой молодежи, повышение профессионального уровня музыкантов и музыкальных коллективов. Общение и обмен опытом среди участников конкурса-фестиваля. Повышение педагогического мастерства педагогов, преподавателей. Обмен опытом между педагогами различных учреждений.
+							.contest-item__block
+								span.contest-item__title-small Номинации 
+								ul.list-pink 
+									li Сольное инструментальное исполнительство
+									li Сольное вокальное исполнительство
+									li Ансамблевое исполнительство
+									li Оркестровое исполнительство
+									li Аранжировка
+							.contest-item__block
+								span.contest-item__title-small  
+								ul.list-pink 
+								.contest-item__text 
+									p 
+									p 
+									p 
+							.contest-item__footer
+								a.btn.btn--circle.btn--a Положение о конкурсе
+									include svg/arrow-circle
+								a.btn.btn--circle.btn--a.showModal1 Подать заявку
+									include svg/arrow-circle
+				.contest-item 
+					h3.contest-item__title II ОТКРЫТЫЙ ФЕСТИВАЛЬ ДОШКОЛЬНОГО ТВОРЧЕСТВА «Я И МИР». ТЕМА: «МИР ПРИРОДЫ»
+					.contest-item__wrap 
+						.contest-item__pic 
+							img(src="img/contests/4.webp" alt="")
+						.contest-item__content
+							.contest-item__block
+								span.contest-item__title-small Цель
+								p.contest-item__subtitle Повышение качества дополнительного образования детей дошкольного возраста различных направлений творческой деятельности ГБУ ДО «Центр творчества «На Вадковском» ДТСЗН г. Москвы.
+							.contest-item__block
+								span.contest-item__title-small Номинации 
+								ul.list-pink 
+									li Декоративно-прикладное творчество
+									li Изобразительное творчество
+									li Танцевальное творчество
+									li Театральное творчество и художественное чтение
+									li Вокальное творчество и инструментальное музицирование
+									li Иностранный язык
+							.contest-item__block
+								span.contest-item__title-small  В рамках фестиваля будут проводиться следующие мероприятия:
+								ul.list-pink 
+									li Организационно-установочная встреча онлайн (19 ноября 2024 года)
+									li Открытая педагогическая конференция «Эффективные педагогические практики работы с детьми дошкольного возраста». (18 марта 2025 года)
+									li Выставка творческих работ (09 апреля 2025 года)
+									li Праздник-концерт (09 апреля 2025 года)
+									li Награждение участников Фестиваля (09 апреля 2025 года)
+								.contest-item__text 
+									p Для участия в фестивале необходимо зарегистрироваться в срок до 17 ноября 2024 года
+									p Фестивальная выставка, праздничный концерт, награждение участников по адресу: Вадковский пер., д.3
+									p Электронный адрес: info.ct@mail.ru
+									p Телефон для справок: 8 (906) 736-74-86
+							.contest-item__footer
+								a.btn.btn--circle.btn--a Положение о конкурсе
+									include svg/arrow-circle
+								a.btn.btn--circle.btn--a.showModal1 Подать заявку
+									include svg/arrow-circle
+				.contest-item 
+					h3.contest-item__title КОНКУРС ДЕТСКОГО ТВОРЧЕСТВА “ЗОЛОТАЯ ОСЕНЬ”
+					.contest-item__wrap 
+						.contest-item__pic 
+							img(src="img/contests/5.webp" alt="")
+						.contest-item__content
+							.contest-item__block
+								span.contest-item__title-small Цели конкурса
+								p.contest-item__subtitle Создание условий для творческой реализации детей по направлению изобразительное и декоративно-прикладное искусство
+							.contest-item__block
+								span.contest-item__title-small  Конкурс проводится по следующим номинациям
+								ul.list-pink 
+									li «КРАСКИ ОСЕНИ»
+									li «ОСЕННЕЕ НАСТРОЕНИЕ»
+									li «ДАРЫ ОСЕНИ»
+							.contest-item__block
+								span.contest-item__title-small  В рамках фестиваля будут проводиться следующие мероприятия:
+								ul.list-pink 
+									li Организационно-установочная встреча онлайн (19 ноября 2024 года)
+									li Открытая педагогическая конференция «Эффективные педагогические практики работы с детьми дошкольного возраста». (18 марта 2025 года)
+									li Выставка творческих работ (09 апреля 2025 года)
+									li Праздник-концерт (09 апреля 2025 года)
+									li Награждение участников Фестиваля (09 апреля 2025 года)
+								.contest-item__text
+									p Конкурсные работы принимаются 29 октября по 11 ноября 2024
+									p Работы присылайте на почту: tanczurina112@mail.ru
+									p Телефон для справок: 8 (969) 049-68-16. Ичетовкина Оксана Александровна
+							.contest-item__footer
+								a.btn.btn--circle.btn--a Положение о конкурсе
+									include svg/arrow-circle	
+				.pagination 
+					a(href="").pagination__current 01 
+					a(href="") 02
+					a(href="") 03
+					a(href="") ...
+					a(href="") 07

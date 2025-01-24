@@ -1,15 +1,81 @@
 extends layout
+block vars 
+	- var map = true
+	- var mb0 = true
+
 block main 
-	main 
+	main
+		.breadcrumbs 
+			.container
+				ul 
+					li
+						a(href="index.html")
+							span На главную
+					li 
+						span /
+					li 
+						span(href="") О центре 
+
 		section.section
 			.container
-				.breadcrumbs 
-					a(href="").breadcrumbs__link На главную
-					span /
-					span О центре
-				.banner
-					img.banner__thumb(src="../img/bg.webp" alt="")
-					h1 О Центре Творчества<br> «На Вадковском»
-					.banner__content
-						p Cведения об образовательной организации: документы, структура и органы и т.д
-						a(href="") Узнать
+				.about
+					.about__banner 
+						img(src="img/bg-about.webp" alt="")
+						h2.section__title.section__title--white О Центре Творчества <br> «На Вадковском»
+						.about__footer
+							p Cведения об образовательной организации: документы, структура и органы и т.д
+							a(href="") Узнать 
+								img(src="img/arrow-next.svg" alt="")
+					.about__grid 
+						.about__item
+							h3 В Центре творчества в 2023-2024 учебном году обучалось <span class="pink">5090 детей</span> в возрасте от 3 до 18 лет, из них:
+							.about__blocks 
+								.about__block.about__block--color1
+									span 4326+
+									p занимаются на бюджетной основе и 764 за счет родительских средств
+								.about__block.about__block--color2
+									span 631+ 
+									p обучающихся являются детьми с ОВЗ и инвалидностью
+						.about__item 
+							h3 Образовательная деятельность
+							.about__blocks
+								.about__block.about__block--color3 
+									span 203
+									p Реализуются общеразвивающие программы.
+								.about__block.about__block--color4
+									span 139
+									p творческих объединениях по всем направленностям дополнительного образования
+								.about__block.about__block--color5 
+									span 38
+									p специализированных кабинетов, в том числе мастерские, спортивные и танцевальные залы, компьютерные классы, игротеки и пр.
+						.about__item 
+							.about__item-col
+								h3 <span style="color: #ABB8DA">2023-2024 учебном году</span> в различных турнирах, фестивалях, олимпиадах, выставках и прочее приняли участие <span class="pink">более 3500 человек:</span>
+								.about__item-footer
+									p В том числе 130 учащихся с ОВЗ и инвалидностью, из которых 2150 признаны лауреатами и дипломантами конкурсов различного уровня, в том числе:
+									ul.list-pink
+										li 500 — городских
+										li 502 — всеросийских
+										li 87 — межрегиональные
+										li 45 — региональные
+										li 898 — международных
+
+							.about__slider#swiper-about 
+								.swiper-wrapper 
+									.swiper-slide 
+										img(src="img/rectangle54.webp" alt="")
+									.swiper-slide 
+										img(src="img/rectangle54.webp" alt="")
+									.swiper-slide 
+										img(src="img/rectangle54.webp" alt="")
+									.swiper-slide 
+										img(src="img/rectangle54.webp" alt="")
+									.swiper-slide 
+										img(src="img/rectangle54.webp" alt="")
+								.swiper-about__nav 
+									include blocks/swiper-nav
+
+		include blocks/leisure
+		include blocks/story
+		include blocks/team
+		include blocks/contacts-block

@@ -1,0 +1,27 @@
+.storyline {
+	.section__head {
+		display: flex;
+		align-items: center;
+	}
+	.section__title {
+		position: relative;
+		&::after {
+			content:"";
+			// position: absolute;
+			display: inline-block;
+			width: 199px;
+			height: 39px;
+			background-image: url("../img/txt-film.svg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			// left: calc(100% + 10px);
+			margin-left: 20px;
+			margin-top: 10px;
+			@media(max-width: 767px) {
+				width: 131px;
+				height: 25px;
+				margin-top: 0;
+			}
+		}
+	}
+}

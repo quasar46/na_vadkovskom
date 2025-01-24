@@ -1,0 +1,97 @@
+.staff-card {
+	display: grid;
+	grid-template-columns: 216px auto;
+	background-color: #fff;
+	border-radius: 32px;
+	align-items: flex-start;
+
+	@media(max-width: 767px) {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&:hover {
+		.staff-card__title {
+			color: var(--color-pink);
+		}
+
+		.staff-card__pic .btn {
+			// top: auto;
+			bottom: 16px;
+		}
+	}
+}
+
+.staff-card__title {
+	font-size: 22px;
+	font-weight: 600;
+	color: var(--color-blue);
+	margin-bottom: 8px;
+}
+
+.staff-card__descr {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #EAE9E3;
+	margin-bottom: 35px;
+
+	span {
+		&:first-child {
+			font-size: 16px;
+			color: #252932;
+		}
+
+		&:nth-child(2) {
+			font-size: 16px;
+			font-weight: 500;
+		}
+	}
+}
+
+.staff-card__pic {
+	position: relative;
+	padding: 8px;
+	overflow: hidden;
+
+	img {
+		border-radius: 24px;
+		overflow: hidden;
+
+		@media(max-width: 767px) {
+			height: 300px;
+			object-fit: cover;
+		}
+	}
+
+	.btn {
+		position: absolute;
+		bottom: -100px;
+		left: 50%;
+		transform: translateX(-50%);
+		transition: all 0.3s ease;
+	}
+}
+
+.staff-card__content {
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.staff-card__links {
+	margin-top: auto;
+
+	li {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		font-size: 16px;
+
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+	}
+}

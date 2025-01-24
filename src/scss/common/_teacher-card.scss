@@ -1,0 +1,40 @@
+.teacher-card {
+	display: grid;
+	grid-template-columns: 300px auto;
+	background-color: #fff;
+	border-radius: 32px;
+	@media(max-width: 767px) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.teacher-card__pic {
+	padding: 8px;
+}
+
+.teacher-card__content {
+	padding: 28px 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	.btn {
+		margin-top: auto;
+	}
+	p {
+		font-size: 18px;
+		color: #5D667D;
+		@media(max-width: 767px) {
+			font-size: 16px;
+		}
+	}
+}
+
+.teacher-card__title {
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	@media(max-width: 767px) {
+		font-size: 22px;
+	}
+}

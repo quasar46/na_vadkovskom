@@ -1,0 +1,53 @@
+extends layout
+block vars 
+block main 
+	main
+		.breadcrumbs 
+			.container 
+				ul 
+					li 
+						a.fancybox(href="javascript:history.back()") 
+							span Назад
+					li 
+						span /
+					li 
+						span Расписание
+
+		section.section 
+			.container 
+				h2.section__title Расписание
+			.contacts 
+				.tab-container
+					.tabs.contacts__head 
+						.container
+							.tab.contacts__head-item.current ЦТ «На Вадковском» 2024-2025 г.
+							.tab.contacts__head-item ЦТ «На Вадковском» 2024-2025 г. (платные группы)
+							.bird 
+								img(src="img/bird.svg" alt="")
+					.container
+						.tab-pane.current 
+							.doc-list
+								ul 
+									li 
+										a.fancybox(href="http://navadkovscom.ru/wp-content/uploads/2024/11/расписание-для-сайта-ЦТ-бюджет-2024-2025.pdf") Расписание ЦТ “На Вадковском” на 2024-2025 уч.год</a>
+									li 
+										a.fancybox(href="http://navadkovscom.ru/wp-content/uploads/2024/11/%D1%80%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B0%D0%B9%D1%82%D0%B0-%D0%A6%D0%A2-%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%8B%D0%B5-%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8-2024-2025-1.pdf") Расписание ЦТ “На Вадковском” на 2024-2025 уч.год</a>
+						.tab-pane 
+
+				.tab-container2
+					.tabs.contacts__head 
+						.container
+							.tab.contacts__head-item.current СП «Россия молодая» 2024-2025 г.
+							.tab.contacts__head-item СП «Россия молодая» 2024-2025 г. (платные группы)
+							.bird 
+								img(src="img/bird.svg" alt="")
+					.container
+						.tab-pane.current 
+							.doc-list
+								ul 
+									li 
+										a.fancybox(href="http://navadkovscom.ru/wp-content/uploads/2024/11/РАСПИСАНИЕ-БЮДЖЕТ-2024-2025.pdf") Расписание СП “Россия молодая” на 2024-2025 уч.год</a>
+									li 
+										a.fancybox(href="http://navadkovscom.ru/wp-content/uploads/2024/10/Расписание-ПЛАТНОЕ-24-25.pdf") Расписание СП “Россия молодая” на 2024-2025 уч.год (платные группы)</a>
+
+						.tab-pane 

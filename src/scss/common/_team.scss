@@ -1,0 +1,153 @@
+.team {
+	background-color: var(--color-blue);
+
+	.btn-border {
+		margin: auto;
+		display: flex;
+		align-self: center;
+	}
+
+	.reviews-wrapper {
+		.btn-border {
+			margin: 0;
+		}
+	}
+
+	padding: 120px 0;
+	border-radius: 120px;
+
+	@media(max-width: 767px) {
+		padding: 48px 0;
+		border-radius: 40px;
+	}
+}
+
+.team__footer {
+	display: flex;
+}
+
+.team__slider {
+	margin-bottom: 30px;
+	overflow: visible;
+
+	.swiper-slide {
+		transition: all 0.3s ease;
+
+		&:hover {
+			transform: scale(1.1)
+		}
+	}
+
+	.swiper-wrapper {
+		@media(max-width: 767px) {
+			display: grid;
+			grid-template-areas:
+				"item1 item1"
+				"item2 item3"
+				"item4 item5"
+			;
+			gap: 8px;
+		}
+	}
+}
+
+.team__item {
+	width: 308px;
+
+
+	@media(max-width: 767px) {
+		width: auto;
+
+		&:first-child {
+			grid-area: item1;
+		}
+
+		&:nth-child(2) {
+			grid-area: item2;
+		}
+
+		&:nth-child(3) {
+			grid-area: item3;
+		}
+
+		&:nth-child(4) {
+			grid-area: item4;
+		}
+
+		&:nth-child(5) {
+			grid-area: item5;
+		}
+	}
+}
+
+.team__body {
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.team__pic {
+	margin-bottom: 16px;
+	border-radius: 32px;
+	overflow: hidden;
+
+	@media(max-width: 767px) {
+		margin-bottom: 8px;
+	}
+}
+
+.team__name {
+	font-size: 22px;
+	font-weight: 600;
+
+	@media(max-width: 767px) {
+		font-size: 16px;
+	}
+}
+
+.team__post {
+	font-size: 18px;
+	font-weight: 500;
+
+	@media(max-width: 767px) {
+		font-size: 16px;
+	}
+}
+
+.team__descr {
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -moz-box;
+	-moz-box-orient: vertical;
+	display: -webkit-box;
+	-webkit-line-clamp: 5;
+	-webkit-box-orient: vertical;
+	line-clamp: 5;
+	box-orient: vertical;
+
+	@media(max-width: 767px) {
+		font-size: 14px;
+	}
+}
+
+.team-nav {
+	position: relative;
+	display: flex;
+	gap: 16px;
+
+	&::before {
+		content: "";
+		position: absolute;
+		bottom: calc(100% + 16px);
+		left: 0;
+		width: 154px;
+		height: 40px;
+		background-image: url("../img/slide-text.svg");
+	}
+
+	@media(max-width: 768px) {
+		display: none;
+	}
+}

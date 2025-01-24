@@ -1,0 +1,141 @@
+extends layout
+block vars 
+	- var footerBeforeDisable = "true"
+	- var mainSliderFirstBtn = "Подробнее"
+	- var mainSliderSecondBtn = "Оставить отзыв"
+	- var mainSliderTitle1 = "МОСКОВСКОЕ ДОЛГОЛЕТИЕ"
+	- var mainSliderTitle2 = "МОСКОВСКОЕ ДОЛГОЛЕТИЕ"
+	- var mainSliderTitle3 = "МОСКОВСКОЕ ДОЛГОЛЕТИЕ"
+	- var mainSliderText1 = "Многопрофильный разноуровневый образовательно-досуговый комплекс, решающий задачи дополнительного образования детей, подростков и молодежи"
+	- var mainSliderText2 = "Многопрофильный разноуровневый образовательно-досуговый комплекс, решающий задачи дополнительного образования детей, подростков и молодежи"
+	- var mainSliderText3 = "Многопрофильный разноуровневый образовательно-досуговый комплекс, решающий задачи дополнительного образования детей, подростков и молодежи"
+	- var mainSliderUrlPic1 = "img/image.webp"
+	- var mainSliderUrlPic2 = "img/image.webp"
+
+block main 
+	main
+		.breadcrumbs 
+			.container 
+				ul 
+					li
+						a(href="javascript:history.back()")
+							span Назад 
+					li 
+						span /
+					li 
+						span Об образовательной организации
+
+		include blocks/main-slider
+		include blocks/news-block
+
+		section.section.storyline
+			.container
+				.section__head
+					.section__head-tite
+						h2.section__title <span class="blue">В рамках празднования юбилея  </span> канал «МОСКВА24» снял сюжет
+						span.section__subtitle Участником которого стал наш Центр в программе «Жизнь в большом городе»
+				.section__wrap 
+					include blocks/video
+
+
+		section.section.team(style="margin-bottom: 0; padding-bottom: 0; border-radius: 120px 120px 0 0;")
+			.container 
+				.raspisanie
+					h2.section__title.section__title--white РАСПИСАНИЕ ЗАНЯТИЙ НА <br> НОВЫЙ УЧЕБНЫЙ ГОД <span class="pink">2024-2025</span>
+					.raspisanie__wrap 
+						.tab-container 
+
+				.team__wrap
+					.section__head
+						h2.section__title.section__title--white Наши преподаватели
+						.team-nav 
+							include blocks/swiper-nav
+					.swiper#swiper-team.team__slider 
+						.swiper-wrapper 
+							a(href="").swiper-slide.team__item 
+								.team__pic 
+									img(src="img/team/1.webp" alt="")
+								.team__body 
+									span.team__name Имя Фамилия О.
+									span.team__post Директор центра, стаж 15 лет
+									span.team__descr Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium pariatur unde ducimus odio laudantium magni officia repellendus quos earum ratione, beatae maxime nihil, laboriosam nesciunt itaque, facere id quidem eaque est sequi! Eveniet fugiat culpa dolore architecto ducimus aperiam nulla quasi assumenda. Non soluta necessitatibus eligendi vel rem excepturi commodi!
+							a(href="").swiper-slide.team__item 
+								.team__pic 
+									img(src="img/team/2.webp" alt="")
+								.team__body 
+									span.team__name Имя Фамилия О.
+									span.team__post Директор центра, стаж 15 лет
+									span.team__descr Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quam.
+							a(href="").swiper-slide.team__item 
+								.team__pic 
+									img(src="img/team/3.webp" alt="")
+								.team__body 
+									span.team__name Имя Фамилия О.
+									span.team__post Директор центра, стаж 15 лет
+									span.team__descr Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni eaque aperiam impedit exercitationem hic repudiandae, molestias error aspernatur ipsam possimus!
+							a(href="").swiper-slide.team__item 
+								.team__pic 
+									img(src="img/team/4.webp" alt="")
+								.team__body 
+									span.team__name Имя Фамилия О.
+									span.team__post Директор центра, стаж 15 лет
+									span.team__descr Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero optio corporis amet recusandae, ducimus aliquam provident ipsum cumque ut blanditiis adipisci facere id expedita hic iste dolorem iure ad nemo consequatur error non sapiente. Atque et laboriosam exercitationem? Facere quisquam sed delectus quae nihil suscipit dignissimos quo magni est ut.
+							a(href="").swiper-slide.team__item 
+								.team__pic 
+									img(src="img/team/2.webp" alt="")
+								.team__body 
+									span.team__name Имя Фамилия О.
+									span.team__post Директор центра, стаж 15 лет
+									span.team__descr Описание в 3-5 строк, если необходимо
+
+					.team__footer
+						a(href="staff.html").btn-border.btn-border--white Все сотрудники
+
+			.reviews-wrapper 
+				.container
+					.section__head 
+						h2.section__title <span class="blue">Отзывы</span> о московских <br> долголетах
+						.section__nav.reviews__nav
+							.slide-next
+								img(src="img/slide-next.svg" alt="")
+							.slide-pic-text
+								img(src="img/slide-pic-text.svg" alt="")
+							.swiper-nav
+								.swiper-button-prev
+									include svg/arrow-prev
+								.swiper-button-next
+									include svg/arrow-next
+							button.btn-border.btn-border--light-blue Оставить отзыв
+					.swiper.reviews#swiper-reviews 
+						.swiper-wrapper 
+							.swiper-slide.reviews__item 
+								p Обожаем наш центр творчества! Много объединений на любой вкус, бюджетно, в историческом здании. Преподаватели все очень дружелюбные и прекрасно умеют работать с детьми. Есть занятия и для взрослых, что очень удобно. Дети там чувствуют себя как дома
+								.reviews__footer 
+									.reviews__pic 
+										img(src="img/ellipse12.webp" alt="")
+									span.reviews__name Мария Иванова
+							.swiper-slide.reviews__item 
+								p Отличный центр детского творчества. Очень много разнообразных направлений. Мастер-классы, праздники, отчётные концерты, выездные мероприятия, доброжелательный персонал и пед состав.
+								.reviews__footer 
+									.reviews__pic 
+										img(src="img/ellipse12.webp" alt="")
+									span.reviews__name Сергей М.
+							.swiper-slide.reviews__item 
+								p Отличный центр детского творчества. Большое разнообразие занятий и соединений. Ребята с удовольствием ходят в это замечательное место. Дети здесь могут провести всё свободное время после школы и в выходные.
+								.reviews__footer 
+									.reviews__pic 
+										img(src="img/ellipse12.webp" alt="")
+									span.reviews__name Татьяна Мультюкова
+							.swiper-slide.reviews__item 
+								p Обожаем наш центр творчества! Много объединений на любой вкус, бюджетно, в историческом здании. Преподаватели все очень дружелюбные и прекрасно умеют работать с детьми. Есть занятия и для взрослых, что очень удобно. Дети там чувствуют себя как дома
+								.reviews__footer 
+									.reviews__pic 
+										img(src="img/ellipse12.webp" alt="")
+									span.reviews__name Мария Иванова
+							.swiper-slide.reviews__item 
+								p Обожаем наш центр творчества! Много объединений на любой вкус, бюджетно, в историческом здании. Преподаватели все очень дружелюбные и прекрасно умеют работать с детьми. Есть занятия и для взрослых, что очень удобно. Дети там чувствуют себя как дома
+								.reviews__footer 
+									.reviews__pic 
+										img(src="img/ellipse12.webp" alt="")
+									span.reviews__name Мария Иванова
+						.swiper-scrollbar

@@ -1,0 +1,33 @@
+section.section(style="position: relative")
+	.container.swiper-main-slider 
+		.swiper.main-slider 
+			.swiper-wrapper 
+				.swiper-slide.main-block 
+					.main-block__pic
+						img(src=mainSliderUrlPic1 alt='')
+					.main-block__content
+						h2.main-block__title #{mainSliderTitle1}
+						.main-block__descr
+							p #{mainSliderText1}
+							.main-block__btns 
+								a.btn.btn--circle.btn--a.showModal1(href="").showModal1 #{mainSliderFirstBtn}
+									include ../svg/arrow-circle
+								a.main-block__btn(href="") #{mainSliderSecondBtn}
+									include ../svg/arrow-circle-sm
+				.swiper-slide.main-block 
+					.main-block__pic
+						img(src=mainSliderUrlPic1 alt='')
+					.main-block__content
+						h2.main-block__title Решаем задачи дополнительного образования детей, подростков и молодежи
+						.main-block__descr
+							p #{mainSliderText2}
+							.main-block__btns 
+								a.btn.btn--circle.btn--a.showModal1(href="").showModal1 #{mainSliderFirstBtn}
+									include ../svg/arrow-circle
+								a.main-block__btn(href="") #{mainSliderSecondBtn}
+									include ../svg/arrow-circle-sm
+
+
+			.main-block__nav
+				include swiper-nav
+	.swiper-pagination
