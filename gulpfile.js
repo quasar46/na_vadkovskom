@@ -15,6 +15,7 @@ import autoprefixer from "autoprefixer";
 import imagemin from "gulp-imagemin";
 import webp from "imagemin-webp";
 import del from "del";
+import concat from "gulp-concat";
 
 gulp.task("pug", function () {
 	return gulp
@@ -55,12 +56,10 @@ gulp.task('vendor', function () {
 		.pipe(gulp.dest("build"))
 });
 
-gulp.task("js", function () {
-	return (
-		gulp
-			.src("src/js/**/*.js")
-			.pipe(gulp.dest("build/js"))
-	);
+gulp.task('js', function () {
+	return gulp.src(['src/js/jquery-3.7.1.min.js', 'src/js/jquery.marquee.min.js', 'src/js/accordion.min.js', 'src/js/aos.js', 'src/js/custom-select.min.js', 'src/js/fancybox.umd.js', 'src/js/marquee.js', 'src/js/swiper-bundle.min.js', 'src/js/tabs.js', 'src/js/main.js'])
+		.pipe(concat('scripts.js'))
+		.pipe(gulp.dest('build/js'));
 });
 
 gulp.task("exportWebP", function () {
@@ -71,7 +70,7 @@ gulp.task("exportWebP", function () {
 			webp({
 				// if pngs turn out sucky uncomment this and redo just pngs
 				// lossless: true,
-				quality: 100
+				quality: 80
 			})
 		]))
 		.pipe(extReplace(".webp"))
